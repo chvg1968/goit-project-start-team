@@ -1,3 +1,3 @@
-# goit-markup-hw-08
+# Proyecto final modulo html y css
 Tarea No. 8
 Proyecto modulo html css 
