@@ -11,7 +11,6 @@ Angie: Header-top
 Rafael: Header-bottom
 
 Main:
-Santiago, Angie, Angelique y Conrado
 
 Products: Conrado
 How it´s made:Santiago
@@ -20,5 +19,4 @@ Review and contacts:Angélique
 
 Footer: 
 Angie y Hernán Dario
-
 
