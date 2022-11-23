@@ -1,84 +1,109 @@
-.bottom {
+@use "./components/footer";
+
+.bottom
+{}
+
+.card
+{}
+
+.header-containerdown
+{
+  &__buttons
+  {}
+
+  &__imagescenter
+  {}
+
+  &__imagesleft
+  {}
+
+  &__imagesleft1
+  {}
+
+  &__imagesleft2
+  {}
+
+  &__text
+  {}
 }
-.card {
+
+.header-containertop
+{
+  &__button
+  {}
+
+  &__logo
+  {}
+
+  &__nav
+  {}
+
+  &__word
+  {}
 }
-.footer-content {
-  &__buttons {
-  }
-  &__contact {
-  }
-  &__icons {
-  }
-  &__rights {
-  }
-  &__titles {
-  }
+
+.header-containtertop
+{}
+
+.img
+{}
+
+.main-advantages
+{
+  &__card
+  {}
 }
-.header-containerdown {
-  &__buttons {
-  }
-  &__imagescenter {
-  }
-  &__imagesleft {
-  }
-  &__imagesleft1 {
-  }
-  &__imagesleft2 {
-  }
-  &__text {
-  }
+
+.main-advantagesrow
+{
+  &__card
+  {}
 }
-.header-containertop {
-  &__button {
-  }
-  &__logo {
-  }
-  &__nav {
-  }
-  &__word {
-  }
+
+.main-contacts
+{
+  &__card
+  {}
 }
-.header-containtertop {
+
+.main-gallery
+{}
+
+.main-howitsmade
+{
+  &__block
+  {}
+
+  &__titles
+  {}
 }
-.img {
+
+.main-products
+{
+  &__cardsrow
+  {}
+
+  &__titles
+  {}
 }
-.main-advantages {
-  &__card {
-  }
+
+.main-review
+{
+  &__content
+  {}
+
+  &__icons
+  {}
+
+  &__img
+  {}
 }
-.main-advantagesrow {
-  &__card {
-  }
-}
-.main-contacts {
-  &__card {
-  }
-}
-.main-gallery {
-}
-.main-howitsmade {
-  &__block {
-  }
-  &__titles {
-  }
-}
-.main-products {
-  &__cardsrow {
-  }
-  &__titles {
-  }
-}
-.main-review {
-  &__content {
-  }
-  &__icons {
-  }
-  &__img {
-  }
-}
-.middle {
-}
-.text {
-}
-.top {
-}
+
+.middle
+{}
+
+.text
+{}
+
+.top
+{}
