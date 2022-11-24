@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-Proyecto final modulo html y css
+
+# Proyecto final modulo html y css
 Tarea Final Proyecto modulo html css
 
 Las tareas quedaron asi:
@@ -40,22 +40,4 @@ PULL
 - para esto, se ponen en la branch dev y hacen - git pull
 
 ATT: Santiago
-=======
-# Proyecto final modulo html y css
-Tarea Final
-Proyecto modulo html css 
 
-Las tareas quedaron asi: 
-
-Header: 
-Angie y Rafael
-
-Angie: Header-top
-Rafael: Header-bottom
-
-Main:
-Santiago, Angie, Angelique y Conrado
-
-Products: Conrado
-gi
->>>>>>> 6ada68f3df82c8c27ccdbd09bf1292152bde9499
