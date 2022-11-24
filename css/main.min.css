@@ -128,7 +128,7 @@ a {
   padding-top: 60px;
   text-align: center;
   background-color: #FFF5F6;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .about__h2 {
   margin: 0;
@@ -137,16 +137,159 @@ a {
   font-size: 18px;
   text-transform: uppercase;
   color: #FFA5BA;
-  border: 1px solid blue;
 }
 .about__h1 {
-  margin-top: 15;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 34px;
   letter-spacing: 0.04em;
+  color: #D41443;
   text-transform: uppercase;
-  border: 1px solid red;
+}
+.about__image {
+  margin: auto;
+  width: 87.5%;
+}
+.about__img {
+  width: 100%;
+}
+.about__text {
+  width: 100vw;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  text-align: left;
+  background-image: url(../images/3aboutbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.about__p {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-right: 60px;
+  max-width: 480px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: #907E82;
+}
+.about__p--bold {
+  color: #000000;
+}
+.about__button {
+  margin: 0;
+  width: 176px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #D41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+}
+.about__svg {
+  position: relative;
+  top: 1px;
+  margin-left: 15px;
+  width: 8px;
+  height: 11px;
+  stroke: #D41443;
+}
+
+@media screen and (min-width: 768px) {
+  .about__h2 {
+    font-size: 26px;
+  }
+  .about__h1 {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 48px;
+  }
+  .about__content {
+    padding-left: 33px;
+    padding-right: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/3aboutbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .about__image {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 32px;
+    width: calc(50% - 16px);
+  }
+  .about__text {
+    width: 334px;
+    padding: 0;
+    padding-bottom: 60px;
+    background-image: none;
+  }
+  .about__p {
+    width: 334px;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  .about__button {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
+    margin: auto;
+    max-width: 1200px;
+  }
+  .about__h2 {
+    font-size: 34px;
+  }
+  .about__h1 {
+    margin-top: 16px;
+    margin-bottom: 60px;
+    width: 100%;
+    font-size: 58px;
+  }
+  .about__content {
+    padding-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 121px;
+  }
+  .about__text {
+    width: 473px;
+  }
+  .about__p {
+    margin-bottom: 32px;
+    width: 473px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+  }
+  .about__p--bold {
+    font-size: 16px;
+  }
+  .about__button {
+    margin: 0;
+  }
+}
+.advantages {
+  padding-left: 20px;
+  background-color: #FFF5F6;
+}
+.advantages__h1 {
+  display: none;
+}
+.advantages__h3 {
+  margin-top: 0;
+}
+.advantages__p {
+  width: 230px;
+  font-size: 12px;
 }
 
 footer {
@@ -161,7 +304,8 @@ footer {
   font-weight: 700;
   font-size: 16px;
   color: var(--black);
-  margin-left: 865px;
+  margin-left: 72%;
+  margin-right: 0;
 }
 .footer-content__rights {
   font-weight: 700;

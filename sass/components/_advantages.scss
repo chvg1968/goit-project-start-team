@@ -1,0 +1,21 @@
+@use "../utils/variables";
+
+.advantages {
+    padding-left: 20px;
+    background-color: $lavender-blush;
+
+
+    &__h1 {
+        display: none;
+    }
+
+    &__h3 {
+        margin-top: 0;
+    }
+
+    &__p {
+        width: 230px;
+        font-size: 12px;
+
+    }
+}
