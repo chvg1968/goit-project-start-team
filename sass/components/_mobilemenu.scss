@@ -1,0 +1,130 @@
+@use '../utils/variables';
+
+.mobile {
+
+    width: 100%;
+
+    &__menubtn {
+        margin-left: calc(100% - 30px);
+        margin-top: 10px;
+        padding:0;
+        background-color: transparent;
+ 
+    }
+
+    &__menusvg {
+        width: 20px;
+        height: 12px;
+        stroke: $redfont;
+        &:hover,
+        &:focus {
+                stroke: $white;
+                transition: var(--transition);
+        }
+        
+    }
+
+    &__container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 100vh;
+        padding-left: 20px;
+        padding-top: 20px;
+        background: $rosedarkbackground;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: $transition1;
+        &.is-open {
+            transform: translateX(0);
+          }
+    }
+
+    &__btnclose {
+        margin-left: auto;
+        margin-right: 32px;
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+    }
+
+    &__svgclose {
+        position: relative;
+        top: -2px;
+        left: -5px;
+        width: 14px;
+        height: 14px;
+        stroke: $white;
+        &:hover {
+            stroke: $rosebackground;
+            transition: var(--transition);
+        }
+    }
+
+    &__display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__buy {
+        margin-top: 26px;
+        margin-bottom: 32px;
+        width: 209px;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $redfont;
+        background-color: $white;
+        border-radius: 22px;
+        &:hover {
+            background-color: $rosebackground;
+            color: white;
+            .mobile__buysvg {
+                stroke: $white;
+            }
+        }
+    }
+
+    &__buysvg {
+        position: relative;
+        top: 1px;
+        margin-left: 15px;
+        width: 8px;
+        height: 11px;
+        stroke: $redfont
+
+    }
+
+    &__link {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 23px;
+        font-size: 14px;
+        color: white;
+        &:hover {
+            color: $redfont;
+        }
+    }
+
+}
+
+/*
+@media screen and (min-width: 768px) {
+    .mobile {
+
+        &__menubtn {
+        
+        }
+
+    }
+} */
+
+@media screen and (min-width: 1200px) {
+    .mobile__menubtn {
+        display: none;
+    }
+}
