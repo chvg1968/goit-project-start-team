@@ -1,4 +1,4 @@
-@use '../utils/variables';
+@use  "../variables";
 
 .mobile {
 
@@ -19,7 +19,7 @@
         &:hover,
         &:focus {
                 stroke: $white;
-                transition: var(--transition);
+                transition: $transition1;
         }
         
     }

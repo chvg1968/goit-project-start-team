@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //Reset del CSS 
 
 *,
@@ -61,26 +60,17 @@ body {
   font-family: 'Titan One', cursive;
 }
 
-=======
->>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
-@import 'utils/variables';
-@import 'components/body';
-@import 'components/head';
-@import 'components/mobilemenu';
-<<<<<<< HEAD
-@import 'utils/variables';
-@import 'components/body';
-@import 'components/head';
-=======
->>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
-@import 'components/products';
-@import 'components/about';
-@import 'components/advantages';
-@import 'components/gallery';
-@import 'components/reviews';
-@import 'components/contact';
-@import 'components/footer';
-<<<<<<< HEAD
+@import './utils/variables';
+@import './utils/components/mobilemenu';
+@import './utils/components/body';
+@import './utils/components/head';
+@import './utils/components/products';
+@import './utils/components/about';
+@import './utils/components/advantages';
+@import './utils/components/gallery';
+@import './utils/components/reviews';
+@import './utils/components/contact';
+@import './utils/components/footer';
 
 
 
@@ -164,6 +154,3 @@ body {
 }
 .top {
 }
-
-=======
->>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
