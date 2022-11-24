@@ -60,6 +60,16 @@ body {
   font-family: 'Titan One', cursive;
 }
 
+@import 'utils/variables';
+@import 'components/body';
+@import 'components/head';
+@import 'components/products';
+@import 'components/about';
+@import 'components/advantages';
+@import 'components/gallery';
+@import 'components/reviews';
+@import 'components/contact';
+@import 'components/footer';
 
 .bottom {
 }
