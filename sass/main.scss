@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Reset del CSS 
 
 *,
@@ -60,9 +61,18 @@ body {
   font-family: 'Titan One', cursive;
 }
 
+=======
+>>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
 @import 'utils/variables';
 @import 'components/body';
 @import 'components/head';
+@import 'components/mobilemenu';
+<<<<<<< HEAD
+@import 'utils/variables';
+@import 'components/body';
+@import 'components/head';
+=======
+>>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
 @import 'components/products';
 @import 'components/about';
 @import 'components/advantages';
@@ -70,6 +80,9 @@ body {
 @import 'components/reviews';
 @import 'components/contact';
 @import 'components/footer';
+<<<<<<< HEAD
+
+
 
 .bottom {
 }
@@ -155,3 +168,6 @@ body {
 }
 .top {
 }
+
+=======
+>>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
