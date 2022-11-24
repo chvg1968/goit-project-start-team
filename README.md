@@ -10,7 +10,13 @@ Angie: Header-top Rafael: Header-bottom
 
 Main: Santiago, Angie, Angelique y Conrado
 
-Products: Conrado gi
+Products: Conrado
+How it´s made:Santiago
+Gallery:Angie
+Review and contacts:Angélique
+
+Footer: 
+Angie y Hernán Dario
 
 Proyecto Star-Team
 Nuestro objetivo es hacer el mejor trabajo possible como equipo.
