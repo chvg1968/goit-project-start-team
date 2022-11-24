@@ -1,10 +1,26 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+@use "../utils/variables";
+=======
 @import "../utils/variables";
+>>>>>>> main
+=======
+@use "../utils/variables";
+>>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
 
 footer
 {
     width: 100%;
     height: 877px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    background-color: $lavender-blush;
+=======
     background-color: var(--lavender-blush);
+>>>>>>> main
+=======
+    background-color: $lavender-blush;
+>>>>>>> 5fcf3b06e6050d16266744f685fdadc041797819
     margin: auto;
 
 }
