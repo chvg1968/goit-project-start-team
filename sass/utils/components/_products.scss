@@ -1,0 +1,11 @@
+@use  "../variables";
+
+.main-products {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    &__cardsrow {
+    }
+    &__titles {
+    }
+}
