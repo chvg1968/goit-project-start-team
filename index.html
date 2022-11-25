@@ -29,9 +29,98 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
+  
   <body>
     <header>
+
+      <section title="hero header">
+
+        <!-- Aca el button de mobile menu que toca 
+          integrar en el header -->
+
+        <div class="mobile">
+          <button
+            class="mobile__menubtn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile">
+            <svg class="mobile__menusvg">
+              <use href="./images/svgs.svg#mobilemenu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- las clases estan en components/_mobilemenu.scss
+        por favor solo modificar .mobile y &__menubtn,
+        no tocar las démas -->
+
+      <div class="header-containtertop">
+        <div class="header-containertop__logo">
+          <svg>
+            <use></use>
+          </svg>
+        </div>
+        <div class="header-containertop__word" <img src="" alt="">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <div class="header-containertop__nav">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>about us</li>
+              <li>How it´s made</li>
+              <li>Our Products</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-containertop__button">
+          <button>Buy now ></button>
+        </div>
+      </div>
+      <div class="header-containerdown">
+        <div class="header-containerdown__imagesleft">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <div class="header-containerdown__buttons">
+          <button>Products</button>
+          <button>How it´s made</button>
+        </div>
+        <div class="header-containerdown__text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. ad
+            distinctio ducimus dolorem possimus iure nisi.
+          </p>
+        </div>
+        <div class="header-containerdown__imagescenter">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <div class="header-containerdown__imagesleft1">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <p>cafes</p>
+        </div>
+        <div class="header-containerdown__imagesleft2">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <p>foodtrucks</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
       <div class="container header--background">
         <!-- Header top -->
         <div class="header-containertop">
@@ -92,11 +181,13 @@
             <img src="" alt="" />
             <p>foodtrucks</p>
           </div>
-        </div>
-      </div>
+      
+         
     </header>
 
+
     <main>
+    <section title="products">
       <div class="main-products">
         <div class="main-products__titles">
           <h2>100% natural</h2>
@@ -105,7 +196,7 @@
         <div class="main-products__cardsrow">
           <div class="main-products__cardsrow card">
             <div class="main-products__cardsrow card top">
-              <img src="" alt="" />
+              <img src="./images/products_icecream.png" alt="icecream" />
             </div>
             <div class="main-products__cardsrow card text">
               <h2>ICE CREAM</h2>
@@ -114,13 +205,12 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Repellat, repudiandae?
               </p>
-              <img src="" alt="" />
+              <img src="./images/products_icecoffee.png" alt="icecoffee" />
             </div>
           </div>
-
           <div class="main-products__cardsrow card">
             <div class="main-products__cardsrow card top">
-              <img src="" alt="" />
+              <img src="./images/products_milkshakes.png" alt="milk" />
             </div>
             <div class="main-products__cardsrow card text">
               <h2>MILKSHAKES</h2>
@@ -149,7 +239,9 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section title="about how is made">
       <div class="main-howitsmade">
         <div class="main-howitsmade__titles">
           <h2>TRADITION AND LOVE</h2>
@@ -179,7 +271,9 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section title="advantages">
       <div class="main-advantages">
         <div class="main-advantages__card">
           <svg>
@@ -214,7 +308,9 @@
           </p>
         </div>
       </div>
+    </section>
 
+    <section title="gallery">
       <div class="main-gallery">
         <img src="" alt="" />
         <img src="" alt="" />
@@ -227,7 +323,9 @@
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
+    </section>
 
+    <section title="customers reviews">
       <div class="main-review">
         <div class="main-review__img">
           <img src="" alt="" />
@@ -242,7 +340,9 @@
           <img src="" alt="" />
         </div>
       </div>
+    </section>
 
+    <section title="contacts">
       <div class="main-contacts">
         <div class="main-contacts__card">
           <div class="main-contacts__card top">
@@ -265,6 +365,7 @@
           </div>
         </div>
       </div>
+    </section>
     </main>
 
     <footer>
@@ -314,5 +415,38 @@
         </div>
       </div>
     </footer>
+
+    <section title="mobile menu">
+      <div class="mobile__container js-menu-container" id="mobile">
+        <button class="mobile__btnclose js-close-menu">
+          <svg class="mobile__svgclose">
+            <use href="./images/svgs.svg#mobileclose"></use>
+          </svg>
+        </button>
+   
+        <div class="mobile__display">
+          <button class="mobile__buy">
+            Buy now
+            <svg class="mobile__buysvg">
+              <use href="./images/svgs.svg#button"></use>
+            </svg>
+          </button>
+          <a class="mobile__link" href="./index.html">Home</a>
+          <a class="mobile__link" href="">About us</a>
+          <a class="mobile__link" href="">How it's made?</a>
+          <a class="mobile__link" href="">Our products</a>
+          <a class="mobile__link" href="">Contact</a>  
+        </div>
+      </div>
+
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="./js/menu.js"></script>
+    </section>
+
   </body>
 </html>
