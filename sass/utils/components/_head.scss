@@ -1,1 +1,37 @@
 @use  "../variables";
+
+.header--background {
+  background-color: $rosebackground;
+}
+
+.header-containertop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header-containertop__button {
+  width: 159px;
+  height: 44px;
+  background-color: $white;
+  border-radius: 22px;
+  color: $redfont;
+  border: 1px solid $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
