@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.main-contacts{list-style:none;display:flex;justify-content:space-evenly;align-items:center;margin-right:32px;margin-left:32px}.main-contacts__info{justify-content:center;justify-items:center}.main-contacts__card{background:#fff;width:368px;height:538px;box-shadow:0px 8px 30px rgba(212,20,67,.1);border-radius:24px;padding-left:40px}.card__truck{width:138px;height:28px;margin-top:40px;background-color:#c2e297;color:#fff;border-radius:6px;padding-left:12px}.card__title{width:75.1px;height:28px;margin-top:40px;background:#f0d1a5;color:#fff;border-radius:6px;padding-left:12px}.card__shedule{border-bottom:1px solid #e1e1e1;width:288px;padding-bottom:32px}.card__shedule :nth-child(even){color:#ffa5ba;font-weight:500}.card__info{font-size:16px;line-height:183%;color:#907e82;padding-bottom:32px;border-bottom:1px solid #e1e1e1;width:288px}.card__speakto{font-size:16px;font-family:DM Sans;line-height:183%;text-decoration:none;color:#907e82;margin-right:78px}footer{width:100%;height:877px;background-color:var(--lavender-blush);margin:auto}.footer-content__contact{display:flex;font-weight:700;font-size:16px;color:var(--black);margin-left:865px}.footer-content__rights{font-weight:700;font-size:16px}.footer-content__titles{font-family:"Titan One";font-style:normal;font-weight:400;font-size:30px;line-height:34px;letter-spacing:.04em;text-transform:uppercase}.contact__tel{font-weight:700;font-size:16px;color:var(--redfont);text-decoration:none;padding-top:20px;margin-left:2px}.contact__tel:hover{transform:scale(1.05)}.low-line{width:100%;position:absolute;border-top:1px solid #e1e1e1}/*# sourceMappingURL=main.min.css.map */-size: 30px;
-=======
 *,
 *::before,
 *::after {
@@ -233,71 +230,106 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+/*estilos de los tableros de contacto*/
+.main-contacts {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.main-contacts__info {
+  justify-content: center;
+  justify-items: center;
+}
+.main-contacts__card {
+  background: #ffffff;
+  width: 368px;
+  height: 538px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding-left: 40px;
+}
+
+.card__truck {
+  width: 138px;
+  height: 28px;
+  margin-top: 40px;
+  background-color: #C2E297;
+  color: #ffffff;
+  border-radius: 6px;
+  padding-left: 12px;
+}
+.card__title {
+  width: 75.1px;
+  height: 28px;
+  margin-top: 40px;
+  background: #F0D1A5;
+  color: #ffffff;
+  border-radius: 6px;
+  padding-left: 12px;
+}
+.card__shedule {
+  border-bottom: 1px solid #E1E1E1;
+  width: 288px;
+  padding-bottom: 32px;
+}
+.card__shedule :nth-child(even) {
+  color: #FFA5BA;
+  font-weight: 500;
+}
+.card__info {
+  font-size: 16px;
+  line-height: 183%;
+  color: #907E82;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E1E1E1;
+  width: 288px;
+}
+.card__speakto {
+  font-size: 16px;
+  font-family: DM Sans;
+  line-height: 183%;
+  text-decoration: none;
+  color: #907E82;
+  margin-right: 78px;
+}
+
 footer {
   width: 100%;
   height: 877px;
-  background-color: #FFF5F6;
-  margin: 0 auto;
+  background-color: var(--lavender-blush);
+  margin: auto;
 }
 
 .footer-content__contact {
   display: flex;
-  align-items: center;
   font-weight: 700;
   font-size: 16px;
-  color: #000000;
+  color: var(--black);
+  margin-left: 865px;
 }
 .footer-content__rights {
   font-weight: 700;
   font-size: 16px;
-  color: #907E82;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 186%;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 .footer-content__titles {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
-  text-transform: uppercase;
-}
-.footer-content__title-up {
   font-size: 30px;
->>>>>>> dev
   line-height: 34px;
   letter-spacing: 0.04em;
-  color: #FFA5BA;
-}
-.footer-content__title-down {
-  font-size: 58px;
-  line-height: 66px;
-  letter-spacing: 0.06em;
-  color: #D41443;
-}
-
-.social-network {
-  display: flex;
-}
-.social-network__box {
-  width: 34px;
-  height: 34px;
-  background-color: #fea5bb;
-  border: 1px solid #fea5bb;
-  border-radius: 50%;
-  padding: 7px;
-}
-.social-network__icon {
-  width: 20px;
-  height: 20px;
+  text-transform: uppercase;
 }
 
 .contact__tel {
   font-weight: 700;
   font-size: 16px;
-  color: #D41443;
+  color: var(--redfont);
   text-decoration: none;
+  padding-top: 20px;
   margin-left: 2px;
 }
 
@@ -308,17 +340,7 @@ footer {
 .low-line {
   width: 100%;
   position: absolute;
-<<<<<<< HEAD
   border-top: 1px solid #E1E1E1;
-}/*# sourceMappingURL=main.min.css.map */
-=======
-  border-top: 1px solid #e1e1e1;
-}
-
-.footer-content--flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.min.css.map */
->>>>>>> dev
