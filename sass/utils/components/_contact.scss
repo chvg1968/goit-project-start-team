@@ -1,1 +1,87 @@
-@use  "../variables";
+@import "../utils/variables";
+
+/*estilos de los tableros de contacto*/
+.main-contacts
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 32px;
+    margin-left: 32px;
+
+    &__info
+    {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__card
+    {
+        background: $white;
+        width: 368px;
+        height: 538px;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-left: 40px;
+    }
+}
+
+.card
+{
+    &__truck
+    {
+        width: 138px;
+        height: 28px;
+        margin-top: 40px;
+        background-color: $colorgreen;
+        color: $white;
+        border-radius: 6px;
+        padding-left: 12px;
+
+    }
+
+    &__title
+    {
+        width: 75.1px;
+        height: 28px;
+        margin-top: 40px;
+        background: $coloricecoffe;
+        color: $white;
+        border-radius: 6px;
+        padding-left: 12px;
+    }
+
+    &__shedule
+    {
+        border-bottom: 1px solid $light-silvercolor;
+        width: 288px;
+        padding-bottom: 32px;
+
+        & :nth-child(even)
+        {
+            color: $rosedark;
+            font-weight: 500;
+        }
+    }
+
+    &__info
+    {
+        font-size: 16px;
+        line-height: 183%;
+        color: $gray-pink;
+        padding-bottom: 32px;
+        border-bottom: 1px solid $light-silvercolor;
+        width: 288px;
+    }
+
+    &__speakto
+    {
+        font-size: 16px;
+        font-family: $font-general;
+        line-height: 183%;
+        text-decoration: none;
+        color: $gray-pink;
+        margin-right: 78px;
+    }
+}
