@@ -1,11 +1,113 @@
 @use  "../variables";
 
-.main-products {
-    display:flex;
+.products{
+    width: $width-responsive1200;
+    margin:0 auto; 
+}
+
+.main-products-titles{
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    &__cardsrow {
+    align-items: center;
+    .title1{
+        height: 34px;
+        width: 280px;
+        left: 460px;
+        top: 725px;
+        font-family:$font-title;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color : $rosedark;
+
     }
-    &__titles {
+    .title2{
+        height: 66px;
+        width: 394px;
+        left: 403px;
+        top: 775px;
+        font-family: $font-title;
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color:$redfont;
+    }
+}
+
+.main-products {
+    margin:auto 15px auto;
+    &__cardsrow {
+        display: flex;
+        .card{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .top{
+            height: 394px;
+            width: 368px;
+            left: 16px;
+            top: 861px;
+            border-radius: 0px;
+            z-index: 1;
+         }
+         .content{
+            
+            height: 535px;
+            width: 368px;
+            left: 16px;
+            top: 1122px;
+            border-radius: 24px;
+            background:$rosebackground;
+            margin-top:-133px; 
+            .title1{
+                height: 34px;
+                width: 368px;
+                left: 16px;
+                top: 1287px;
+                font-family: $font-title;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 34px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color:$white;
+            }
+            .title2{
+                height: 6px;
+                width: 6px;
+                left: 206px;
+                top: 1353px;
+                border-radius: 0px;
+                font-weight: 700;
+                color:$white;
+            }
+            .p{
+                height: 106px;
+                width: 245px;
+                left: 77px;
+                top: 1391px;
+                font-family:$font-general;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: $white;
+            }
+            .icon{
+                height: 40px;
+                width: 38px;
+                left: 180px;
+                top: 1557px;
+                border-radius: 0px;
+            }
+
+         }
+        }   
     }
 }
