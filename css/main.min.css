@@ -283,6 +283,10 @@ a {
   z-index: 1;
 }
 .main-products__cardsrow .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 535px;
   width: 368px;
   left: 16px;
@@ -290,10 +294,12 @@ a {
   border-radius: 24px;
   background: #FFB8CA;
   margin-top: -133px;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 .main-products__cardsrow .card .content .title1 {
+  margin-top: 100px;
   height: 34px;
-  width: 368px;
   left: 16px;
   top: 1287px;
   font-family: Titan One;
@@ -305,15 +311,20 @@ a {
   color: #ffffff;
 }
 .main-products__cardsrow .card .content .title2 {
+  margin-top: 10px;
   height: 6px;
   width: 6px;
   left: 206px;
   top: 1353px;
   border-radius: 0px;
   font-weight: 700;
+  font-family: Titan One;
+  font-size: 30px;
   color: #ffffff;
 }
 .main-products__cardsrow .card .content .p {
+  margin-top: 20px;
+  height: 6px;
   height: 106px;
   width: 245px;
   left: 77px;
@@ -332,6 +343,14 @@ a {
   left: 180px;
   top: 1557px;
   border-radius: 0px;
+}
+
+.main-products__cardsrow .card .top:hover {
+  cursor: pointer;
+}
+.main-products__cardsrow .card .content {
+  transform: translateY(0);
+  transition: all 1s ease-in-out 0s;
 }
 
 footer {
