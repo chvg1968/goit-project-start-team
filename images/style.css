@@ -1,0 +1,52 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.mobilemenu {
+  width: 1.4287109375em;
+}
+
+.button {
+  width: 0.7998046875em;
+}
+
+.comillas {
+  width: 1.349609375em;
+}
+
+.facebook {
+  width: 0.5em;
+}
+
+.Logo {
+  width: 3.98046875em;
+}
+
+.products1 {
+  width: 4.3330078125em;
+}
+
+.reviews1 {
+  width: 8em;
+}
+
+.reviewshouse {
+  width: 1.0908203125em;
+}
+
+.telegram {
+  width: 1.375em;
+}
