@@ -35,3 +35,96 @@
   font-size: 16px;
   line-height: 21px;
 }
+
+.header-containerbottom {
+  background-color: $rosebackground;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-containerdown__left {
+  margin-left: 15px;
+}
+
+.header-containerdown__leftbuttons {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.button_prod {
+font-family: $font-general;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+background-color: $redfont;
+width: 107px;
+height: 40px;
+color: $white;
+border-radius: 20px;
+border: none;
+}
+
+.button_how {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $white;
+  width: 138px;
+  height: 40px;
+  color: $redfont;
+  border-radius: 20px;
+  border: none;
+}
+
+.header-containerdown__lefttext {
+  width: 200px;
+}
+
+.header-containerdown__leftimage2,
+.header-containerdown__lefttext {
+  display: inline-block;
+}
+
+.header-down__text {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+}
+
+.header-containerdown__right {
+  margin-right: 15px;
+}
+
+.header-containerdown__right1,
+.header-containerdown__right2 {
+  margin-left: 200px;
+  background-color: $white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.header-down__cafenumber,
+.header-down__foodnumber {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $redfont;
+}
+
+.header-containerdown__right3 {
+  padding-top: 160px;
+}
