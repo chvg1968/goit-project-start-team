@@ -239,6 +239,53 @@ ul {
   width: 138px;
   height: 40px;
   color: #D41443;
+  border: 1px solid #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.header-containerbottom {
+  background-color: #FFB8CA;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-containerdown__left {
+  margin-left: 15px;
+}
+
+.header-containerdown__leftbuttons {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.button_prod {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #D41443;
+  width: 107px;
+  height: 40px;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+}
+
+.button_how {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ffffff;
+  width: 138px;
+  height: 40px;
+  color: #D41443;
   border-radius: 20px;
   border: none;
 }
