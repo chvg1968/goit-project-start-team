@@ -120,7 +120,7 @@
             left: 16px;
             top: 861px;
             border-radius: 0px;
-             z-index: 1;
+            z-index: 1;
             }
             .content{
                 @include content-profile; 
@@ -151,14 +151,13 @@
     
 }  
         
-.main-products__cardsrow .card{
-            .top:hover{
+.main-products__cardsrow .card .top:hover{
             cursor: pointer;
             .content{
                 border:solid 2px red; 
-            }
+          }
         }  
-    }
+
 
 @media screen and (max-width:480px){
     .main-products__cardsrow{
