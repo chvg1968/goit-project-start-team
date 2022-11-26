@@ -1,30 +1,32 @@
-@use  "../variables";
+@use "../variables";
 
-.products{
+.products {
     width: $width-responsive1200;
-    margin:0 auto; 
+    margin: 0 auto;
 }
 
-.main-products-titles{
+.main-products-titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .title1{
+
+    .title1 {
         height: 34px;
         width: 280px;
         left: 460px;
         top: 725px;
-        font-family:$font-title;
+        font-family: $font-title;
         font-size: 30px;
         font-weight: 400;
         line-height: 34px;
         letter-spacing: 0.04em;
         text-align: center;
-        color : $rosedark;
+        color: $rosedark;
 
     }
-    .title2{
+
+    .title2 {
         height: 66px;
         width: 394px;
         left: 403px;
@@ -35,25 +37,24 @@
         line-height: 66px;
         letter-spacing: 0.06em;
         text-align: center;
-        color:$redfont;
+        color: $redfont;
     }
 }
 
 @mixin content-profile {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 535px;
-        width: 368px;
-        left: 16px;
-        top: 1122px;
-        border-radius: 24px;
-        margin-top:-133px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 535px;
+    width: 368px;
+    left: 16px;
+    top: 1122px;
+    border-radius: 24px;
+    margin-top: -133px;
 }
 
-@mixin content-title1{
-    margin-top: 100px;
+@mixin content-title1 {
     height: 34px;
     left: 16px;
     top: 1287px;
@@ -63,30 +64,28 @@
     line-height: 34px;
     letter-spacing: 0.04em;
     text-align: center;
-    color:$white;
+    color: $white;
 }
 
-@mixin content-title2{
-    margin-top:10px;
-    height: 6px;
-    width: 6px;
+@mixin content-title2 {
+    height: 30px;
+    width: 30px;
     left: 206px;
     top: 1353px;
     border-radius: 0px;
     font-weight: 700;
     font-family: $font-title;
     font-size: 30px;
-    color:$white;
+    color: $white;
 }
 
-@mixin content-p{
-    margin-top: 20px;
+@mixin content-p {
     height: 6px;
     height: 106px;
     width: 245px;
     left: 77px;
     top: 1391px;
-    font-family:$font-general;
+    font-family: $font-general;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -95,7 +94,7 @@
     color: $white;
 }
 
-@mixin content-icon{
+@mixin content-icon {
     height: 40px;
     width: 38px;
     left: 180px;
@@ -104,75 +103,109 @@
 }
 
 .main-products {
-    margin:auto 15px auto;
+    margin: auto 15px auto;
+
     &__cardsrow {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap:30px; 
-        .card{
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-            .top{
-            height: 394px;
-            width: 368px;
-            left: 16px;
-            top: 861px;
-            border-radius: 0px;
-            z-index: 1;
+        gap: 30px;
+
+        .card {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                
+                height: 394px;
+                width: 368px;
+                left: 16px;
+                top: 861px;
+                border-radius: 0px;
+                z-index: 1;
             }
-            .content{
-                @include content-profile; 
-                &--color1{
-                    background:$rosebackground;
+
+            .content {
+                transform: translateY(-20%);
+                opacity: 0;
+                overflow: hidden;
+                @include content-profile;
+
+                &--color1 {
+                    background: $rosebackground;
                 }
-                &--color2{
-                    background:$ice-coffee;
+
+                &--color2 {
+                    background: $ice-coffee;
                 }
-                &--color3{
-                    background:$ice-green;
+
+                &--color3 {
+                    background: $ice-green;
                 }
-                .title1{
-                @include content-title1;
+
+                .title1 {
+                    margin-top:100px;
+                    @include content-title1;
                 }
-                .title2{
-                @include content-title2;
+
+                .title2 {
+                    margin-top:-30px;
+                    @include content-title2;
                 }
-                .p{
-                @include content-p;    
+
+                .p {
+                    margin-top:-30px;
+                    @include content-p;
                 }
-                .icon{
-                @include content-icon;       
+
+                .icon {
+                    @include content-icon;
                 }
             }
         }
     }
-    
-}  
-        
-.main-products__cardsrow .card .top:hover{
-            cursor: pointer;
-            .content{
-                border:solid 2px red; 
-          }
-        }  
+
+}
+
+.main-products__cardsrow .card:hover {
+        cursor: pointer;
+        .content{
+        transform:translateY(0);
+        transition: $transition1;
+        opacity: 1;
+}
+}
 
 
-@media screen and (max-width:480px){
-    .main-products__cardsrow{
+@media screen and (max-width:480px) {
+    .main-products__cardsrow {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:960){
-    .main-products__cardsrow{
-        display:flex; 
-        margin: auto; 
-        .card{
-            width: 10%;
-        }
+@media screen and (min-width:768px) and (max-width:960) {
+    .main-products {
+        margin: auto 15px auto;
 
+        &__cardsrow {
+            gap: 5px;
+            .card {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .top {
+                    height: 224px;
+                    width: 224px;
+                }
+
+                .content {
+                    width: 224px;
+                    height: 473px;
+                }
+            }
+        }
     }
 }
