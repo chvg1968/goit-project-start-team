@@ -1,10 +1,10 @@
-@use  "../variables";
+@use "../variables";
 
 footer
 {
     width: 100%;
     height: 877px;
-    background-color: var(--lavender-blush);
+    background-color: $lavender-blush;
     margin: auto;
 
 }
@@ -49,7 +49,7 @@ footer
 {
     font-weight: 700;
     font-size: 16px;
-    color: var(--redfont);
+    color: $redfont;
     text-decoration: none;
     padding-top: 20px;
     margin-left: 2px;
@@ -64,5 +64,5 @@ footer
 {
     width: 100%;
     position: absolute;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid $light-silvercolor;
 }
