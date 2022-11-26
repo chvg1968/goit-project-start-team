@@ -39,96 +39,130 @@
     }
 }
 
+@mixin content-profile {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 535px;
+        width: 368px;
+        left: 16px;
+        top: 1122px;
+        border-radius: 24px;
+        margin-top:-133px; 
+}
+
+@mixin content-title1{
+    margin-top: 100px;
+    height: 34px;
+    left: 16px;
+    top: 1287px;
+    font-family: $font-title;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color:$white;
+}
+
+@mixin content-title2{
+    margin-top:10px;
+    height: 6px;
+    width: 6px;
+    left: 206px;
+    top: 1353px;
+    border-radius: 0px;
+    font-weight: 700;
+    font-family: $font-title;
+    font-size: 30px;
+    color:$white;
+}
+
+@mixin content-p{
+    margin-top: 20px;
+    height: 6px;
+    height: 106px;
+    width: 245px;
+    left: 77px;
+    top: 1391px;
+    font-family:$font-general;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $white;
+}
+
+@mixin content-icon{
+    height: 40px;
+    width: 38px;
+    left: 180px;
+    top: 1557px;
+    border-radius: 0px;
+}
+
 .main-products {
     margin:auto 15px auto;
     &__cardsrow {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px; 
         .card{
          flex-direction: column;
          justify-content: center;
          align-items: center;
             .top{
-                height: 394px;
-                width: 368px;
-                left: 16px;
-                top: 861px;
-                border-radius: 0px;
-                z-index: 1;
+            height: 394px;
+            width: 368px;
+            left: 16px;
+            top: 861px;
+            border-radius: 0px;
+             z-index: 1;
             }
             .content{
-                display:flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                height: 535px;
-                width: 368px;
-                left: 16px;
-                top: 1122px;
-                border-radius: 24px;
-                background:$rosebackground;
-                margin-top:-133px; 
-                transform: translateY(-100%);
-                opacity: 0;
+                @include content-profile; 
+                &--color1{
+                    background:$rosebackground;
+                }
+                &--color2{
+                    background:$ice-coffee;
+                }
+                &--color3{
+                    background:$ice-green;
+                }
                 .title1{
-                    margin-top: 100px;
-                    height: 34px;
-                    left: 16px;
-                    top: 1287px;
-                    font-family: $font-title;
-                    font-size: 30px;
-                    font-weight: 400;
-                    line-height: 34px;
-                    letter-spacing: 0.04em;
-                    text-align: center;
-                    color:$white;
+                @include content-title1;
                 }
                 .title2{
-                    margin-top:10px;
-                    height: 6px;
-                    width: 6px;
-                    left: 206px;
-                    top: 1353px;
-                    border-radius: 0px;
-                    font-weight: 700;
-                    font-family: $font-title;
-                    font-size: 30px;
-                    color:$white;
+                @include content-title2;
                 }
                 .p{
-                    margin-top: 20px;
-                    height: 6px;
-                    height: 106px;
-                    width: 245px;
-                    left: 77px;
-                    top: 1391px;
-                    font-family:$font-general;
-                    font-size: 16px;
-                    font-weight: 700;
-                    line-height: 28px;
-                    letter-spacing: 0.04em;
-                    text-align: center;
-                    color: $white;
+                @include content-p;    
                 }
                 .icon{
-                    height: 40px;
-                    width: 38px;
-                    left: 180px;
-                    top: 1557px;
-                    border-radius: 0px;
+                @include content-icon;       
                 }
             }
         }
     }
     
 }  
-
         
 .main-products__cardsrow .card{
             .top:hover{
             cursor: pointer;
-        }
-        .content{
-            transform: translateY(0);
-            transition: all 1s ease-in-out 0s;
-        }
+            .content{
+                border:solid 2px red; 
+            }
+        }  
     }
+
+@media screen and (max-width:480px){
+    .main-products__cardsrow{
+        display: flex;
+        flex-direction: column;
+    }
+}
