@@ -1,37 +1,239 @@
 @use  "../variables";
 
-.header--background {
-  background-color: $rosebackground;
+.header {
+
+  &--background {
+    background-color: $rosebackground;
+  }
+
+  &-containertop {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      height: 50px;
+      width: 199px;
+    }
+  
+
+    &__button {
+      width: 159px;
+      height: 44px;
+      background-color: $white;
+      border-radius: 22px;
+      color: $redfont;
+      border: 1px solid $white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__itemsright {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.header-containertop {
+.navigation {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-containertop__button {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .header {
+    &-containertop {
+      padding-top: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+}
+
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &-containertop {
+      margin: auto;
+      padding-top: 37px;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
+}
+
+
+.header-containerbottom {
+  margin: auto;
+  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navigation__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+.header-containerdown__left {
+  margin-left: 15px;
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 35px;
+.header-containerdown__leftbuttons {
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
-.header-containertop__button {
-  width: 159px;
-  height: 44px;
+.button_prod {
+font-family: $font-general;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+background-color: $redfont;
+width: 107px;
+height: 40px;
+color: $white;
+border-radius: 20px;
+border: none;
+}
+
+.button_how {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   background-color: $white;
-  border-radius: 22px;
+  width: 138px;
+  height: 40px;
   color: $redfont;
   border: 1px solid $white;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+}
+
+.header-containerbottom {
+  background-color: $rosebackground;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-containerdown__left {
+  margin-left: 15px;
+}
+
+.header-containerdown__leftbuttons {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.button_prod {
+font-family: $font-general;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+background-color: $redfont;
+width: 107px;
+height: 40px;
+color: $white;
+border-radius: 20px;
+border: none;
+}
+
+.button_how {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $white;
+  width: 138px;
+  height: 40px;
+  color: $redfont;
+  border-radius: 20px;
+  border: none;
+}
+
+.header-containerdown__lefttext {
+  width: 200px;
+}
+
+.header-containerdown__leftimage2,
+.header-containerdown__lefttext {
+  display: inline-block;
+}
+
+.header-down__text {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+}
+
+.header-containerdown__right {
+  margin-right: 15px;
+}
+
+.header-containerdown__right1,
+.header-containerdown__right2 {
+  margin-left: 200px;
+  background-color: $white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.header-down__cafenumber,
+.header-down__foodnumber {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 53px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $redfont;
+}
+
+.header-containerdown__right3 {
+  padding-top: 160px;
 }

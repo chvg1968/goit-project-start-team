@@ -1,11 +1,215 @@
-@use  "../variables";
+@use "../variables";
 
-.main-products {
-    display:flex;
+.products {
+    width: $width-responsive1200;
+    margin: 0 auto;
+}
+
+.main-products-titles {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    &__cardsrow {
+    align-items: center;
+
+    .title1 {
+        height: 34px;
+        width: 280px;
+        left: 460px;
+        top: 725px;
+        font-family: $font-title;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: $rosedark;
+
     }
-    &__titles {
+
+    .title2 {
+        height: 66px;
+        width: 394px;
+        left: 403px;
+        top: 775px;
+        font-family: $font-title;
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $redfont;
+    }
+}
+
+@mixin content-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 535px;
+    width: 368px;
+    left: 16px;
+    top: 1122px;
+    border-radius: 24px;
+    margin-top: -133px;
+}
+
+@mixin content-title1 {
+    height: 34px;
+    left: 16px;
+    top: 1287px;
+    font-family: $font-title;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $white;
+}
+
+@mixin content-title2 {
+    height: 30px;
+    width: 30px;
+    left: 206px;
+    top: 1353px;
+    border-radius: 0px;
+    font-weight: 700;
+    font-family: $font-title;
+    font-size: 30px;
+    color: $white;
+}
+
+@mixin content-p {
+    height: 6px;
+    height: 106px;
+    width: 245px;
+    left: 77px;
+    top: 1391px;
+    font-family: $font-general;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $white;
+}
+
+@mixin content-icon {
+    height: 40px;
+    width: 38px;
+    left: 180px;
+    top: 1557px;
+    border-radius: 0px;
+}
+
+.main-products {
+    margin: auto 15px auto;
+
+    &__cardsrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        .card {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .top {
+                
+                height: 394px;
+                width: 368px;
+                left: 16px;
+                top: 861px;
+                border-radius: 0px;
+                z-index: 1;
+            }
+
+            .content {
+                transform: translateY(-20%);
+                opacity: 0;
+                overflow: hidden;
+                @include content-profile;
+
+                &--color1 {
+                    background: $rosebackground;
+                }
+
+                &--color2 {
+                    background: $ice-coffee;
+                }
+
+                &--color3 {
+                    background: $ice-green;
+                }
+
+                .title1 {
+                    margin-top:100px;
+                    @include content-title1;
+                }
+
+                .title2 {
+                    margin-top:-30px;
+                    @include content-title2;
+                }
+
+                .p {
+                    margin-top:-30px;
+                    @include content-p;
+                }
+
+                .icon {
+                    @include content-icon;
+                }
+            }
+        }
+    }
+}
+
+.main-products__cardsrow .card:hover {
+        cursor: pointer;
+        .content{
+        transform:translateY(0);
+        transition: $transition1;
+        opacity: 1;
+}
+}
+
+
+@media screen and (max-width:480px) {
+    .main-products__cardsrow {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .main-products {
+        // margin: auto 15px auto;
+
+        &__cardsrow {
+            margin:0 32px;
+            .card {
+                border:solid 1px blue; 
+                width: calc(33% - 8px);
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+
+                .top {
+                    
+                    width: calc(33% - 8px);
+                    
+                    
+                }
+
+                .content {
+                    
+                    width: calc(33% - 8px);
+                    
+                }
+            }
+        }
     }
 }

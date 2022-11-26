@@ -1,1 +1,96 @@
 @use  "../variables";
+
+.advantages {
+    padding-left: 20px;
+    padding-bottom: 87px;
+    background-color: $lavender-blush;
+    background-image: url("./599502.png");
+    background-size: 50px 50px;
+
+
+    &__h1 {
+        display: none;
+    }
+
+    &__item {
+        margin-bottom: 32px;
+        width: 230px;
+    }
+
+    &__img {
+        margin-bottom: 16px;
+    }
+
+    &__h3 {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $redfont;
+        }    
+
+    &__p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.7;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding-bottom: 251px;
+        padding-left: 32px;
+        display: flex;
+
+        &__container {
+            display: flex;
+        }
+        
+        &__item {
+            width: 160px;
+            margin-right: 5vw;
+        }
+
+        &__h3 {
+            font-size: 48px;
+        }
+
+        &__p {
+            font-weight: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        padding-left: 32px;
+        padding-bottom: 209px;
+
+        &__container {
+            margin: auto;
+            width: 1200px;
+            padding-left: 16px;
+        }
+
+        &__item {
+            width: 288px;
+            margin-right: 80px;
+        }
+        
+        &__h3 {
+            font-size: 58px;
+
+        }
+
+        &__p {
+            font-size: 16px;
+        }
+
+
+    }
+    
+}

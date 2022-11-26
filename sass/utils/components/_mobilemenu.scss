@@ -2,19 +2,14 @@
 
 .mobile {
 
-    width: 100%;
-
     &__menubtn {
-        margin-left: calc(100% - 30px);
-        margin-top: 10px;
         padding:0;
         background-color: transparent;
- 
     }
 
     &__menusvg {
-        width: 20px;
-        height: 12px;
+        width: 24px;
+        height: 14px;
         stroke: $redfont;
         &:hover,
         &:focus {
@@ -109,22 +104,20 @@
             color: $redfont;
         }
     }
-
 }
 
-/*
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 480px) {
     .mobile {
-
-        &__menubtn {
         
+        &__menubtn {
+            margin-right: 32px;
         }
-
     }
-} */
+}
 
 @media screen and (min-width: 1200px) {
-    .mobile__menubtn {
+    .mobile {
         display: none;
     }
 }
