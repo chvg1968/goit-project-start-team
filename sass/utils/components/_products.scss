@@ -12,6 +12,8 @@
     align-items: center;
 
     .title1 {
+        margin-top: 60px;
+        margin-bottom: 15px;
         height: 34px;
         width: 280px;
         left: 460px;
@@ -21,7 +23,7 @@
         font-weight: 400;
         line-height: 34px;
         letter-spacing: 0.04em;
-        text-align: center;
+        
         color: $rosedark;
 
     }
@@ -36,7 +38,7 @@
         font-weight: 400;
         line-height: 66px;
         letter-spacing: 0.06em;
-        text-align: center;
+        
         color: $redfont;
     }
 }
@@ -56,6 +58,7 @@
 
 @mixin content-title1 {
     height: 34px;
+    width: 394px;
     left: 16px;
     top: 1287px;
     font-family: $font-title;
@@ -63,7 +66,7 @@
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0.04em;
-    text-align: center;
+    
     color: $white;
 }
 
@@ -90,7 +93,7 @@
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0.04em;
-    text-align: center;
+    
     color: $white;
 }
 
@@ -104,17 +107,21 @@
 
 .main-products {
     margin: auto 15px auto;
+    margin-bottom:60px;
 
     &__cardsrow {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 15px;
+        
 
         .card {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            
 
             .top {
                 
@@ -184,32 +191,49 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:960px){
     .main-products {
-        // margin: auto 15px auto;
+        margin:auto 15px auto; 
+        margin-bottom: 60px;
 
         &__cardsrow {
-            margin:0 32px;
+            // margin:0 16px;
+            // padding:0 15px; 
             .card {
-                border:solid 1px blue; 
-                width: calc(33% - 8px);
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-
+                 
+                width: calc(33% - 8px); 
+                
                 .top {
-                    
-                    width: calc(33% - 8px);
-                    
+                    max-width: 100%;
+                }
+                .content {
+                    margin-top:-100%;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    gap:32px;
+                .title1{
+                    margin-top:128px;
+                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
+                    margin-bottom:32px;
                     
                 }
-
-                .content {
-                    
-                    width: calc(33% - 8px);
-                    
+                .title2{
+                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
+                    margin-bottom:32px;
+                }
+                .p{ 
+                    padding: 0 15px 0 15px;
+                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
+                    width: 100%;
+                }
                 }
             }
         }
+    }
+    .iceimg{
+        max-width: 100%;
     }
 }
