@@ -207,7 +207,7 @@
                     max-width: 100%;
                 }
                 .content {
-                    margin-top:-100%;
+                    // margin-top:-100%;
                     max-width: 100%;
                     display: flex;
                     justify-content: center;
@@ -215,7 +215,7 @@
                     text-align: center;
                     gap:32px;
                 .title1{
-                    margin-top:128px;
+                    margin-top:-32px;
                     font-size: clamp(0.5rem,4vw + 1rem, 1rem);
                     margin-bottom:32px;
                     
