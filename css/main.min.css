@@ -498,7 +498,6 @@ ul {
     max-width: 100%;
   }
   .main-products__cardsrow .card .content {
-    margin-top: -100%;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -507,7 +506,7 @@ ul {
     gap: 32px;
   }
   .main-products__cardsrow .card .content .title1 {
-    margin-top: 128px;
+    margin-top: -32px;
     font-size: clamp(0.5rem, 4vw + 1rem, 1rem);
     margin-bottom: 32px;
   }
