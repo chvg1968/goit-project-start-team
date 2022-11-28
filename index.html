@@ -24,6 +24,7 @@
 
 <body>
   <header>
+    <!-- Header top -->
     <section title="hero header">
       <div class="container header--background">
         <!-- Header top -->
@@ -33,7 +34,6 @@
               <use href="./images/svgs.svg#Logo"></use>
             </svg>
           </div>
-
           <div class="navigation">
             <nav>
               <ul class="navigation__list">
@@ -45,51 +45,25 @@
               </ul>
             </nav>
           </div>
-
-          <div class="mobile">
-            <button class="mobile__menubtn js-open-menu" aria-expanded="false" aria-controls="mobile">
-              <svg class="mobile__menusvg">
-                <use href="./images/svgs.svg#mobilemenu"></use>
-              </svg>
-            </button>
-          </div>
-
-          <!-- las clases estan en components/_mobilemenu.scss
-        por favor solo modificar .mobile y &__menubtn,
-        no tocar las démas -->
-
-          <div class="container header--background">
-            <!-- Header top -->
-
-            <div class="header-containertop">
-              <div class="header-containertop__logo">
-                <svg>
-                  <use href="./images/svgs.svg#Logo"></use>
+          <div class="header__itemsright">
+            <div class="mobile">
+              <button
+                class="mobile__menubtn js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile">
+                <svg class="mobile__menusvg">
+                  <use href="./images/svgs.svg#mobilemenu"></use>
                 </svg>
-              </div>
-
-              <div class="navigation">
-                <nav>
-                  <ul class="navigation__list">
-                    <li class="navigation__item">Home</li>
-                    <li class="navigation__item">about us</li>
-                    <li class="navigation__item">How it's made</li>
-                    <li class="navigation__item">Our Products</li>
-                    <li class="navigation__item">Contact</li>
-                  </ul>
-                </nav>
-              </div>
-
-              <div>
-                <button class="header-containertop__button" type="button">
-                  Buy now >
-                </button>
-              </div>
+              </button>
+            </div>
+            <div>
+              <button class="header-containertop__button" type="button">
+                Buy now >
+              </button>
             </div>
           </div>
-
-          <!-- Header buttom -->
-
+        </div>
+          <!-- Header buttom  -->
           <div class="header-containerbottom">
             <div class="header-containerdown__left">
 
