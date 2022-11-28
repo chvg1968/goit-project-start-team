@@ -863,9 +863,6 @@ h3 {
   width: 54px;
   height: 40px;
   fill: #E1E1E1;
-<<<<<<< HEAD
-  animation: animate30 3000ms infinite 1000ms;
-=======
   animation: animate-comillas 3000ms infinite 1000ms;
 }
 
@@ -879,7 +876,6 @@ h3 {
   100% {
     transform: rotate(0deg);
   }
->>>>>>> main
 }
 @media screen and (max-width: 768px) {
   .slide p {
