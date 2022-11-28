@@ -1,7 +1,13 @@
-@use  "../variables";
+@use "../variables";
 
-.main-contacts
-{
+.contact-container {
+    background-image: linear-gradient(to top,
+            $lavender-blush 90%,
+            $white 10%);
+
+}
+
+.main-contacts {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -9,14 +15,13 @@
     margin-right: 32px;
     margin-left: 32px;
 
-    &__info
-    {
+
+    &__info {
         justify-content: center;
         justify-items: center;
     }
 
-    &__card
-    {
+    &__card {
         background: $white;
         width: 368px;
         height: 538px;
@@ -24,12 +29,15 @@
         border-radius: 24px;
         padding-left: 40px;
     }
+
+    &__card:hover {
+        transform: scale(1.05);
+    }
+
 }
 
-.card
-{
-    &__truck
-    {
+.card {
+    &__truck {
         width: 138px;
         height: 28px;
         margin-top: 40px;
@@ -37,11 +45,10 @@
         color: $white;
         border-radius: 6px;
         padding-left: 12px;
-
+        margin-bottom: 32px;
     }
 
-    &__title
-    {
+    &__title {
         width: 75.1px;
         height: 28px;
         margin-top: 40px;
@@ -49,53 +56,53 @@
         color: $white;
         border-radius: 6px;
         padding-left: 12px;
+        margin-bottom: 32px;
     }
 
-    &__shedule
-    {
+    &__shedule {
         border-bottom: 1px solid $light-silvercolor;
         width: 288px;
         padding-bottom: 32px;
+        line-height: 186%;
+        margin-top: 32px;
 
-        & :nth-child(even)
-        {
+
+        & :nth-child(even) {
             color: $rosedark;
             font-weight: 500;
         }
     }
 
-    &__info
-    {
+    &__info {
         font-size: 16px;
         line-height: 183%;
         color: $gray-pink;
         padding-bottom: 32px;
         border-bottom: 1px solid $light-silvercolor;
         width: 288px;
+        margin-top: 32px;
     }
 
-    &__speakto
-    {
+    &__speakto {
         font-size: 16px;
         font-family: $font-general;
         line-height: 183%;
         text-decoration: none;
         color: $gray-pink;
         margin-right: 78px;
+        margin-top: 32px;
     }
 }
 
 /*botones de contacto*/
-.buttons
-{
+.buttons {
     display: flex;
     justify-content: center;
     margin-top: 70px;
     margin-right: 12px;
     font-family: $font-general;
 
-    &__location
-    {
+    &__location {
         width: 198px;
         height: 44px;
         border-radius: 22px;
@@ -105,32 +112,55 @@
         background-color: $red-button;
         font-size: 16px;
         color: $white;
-
     }
 
-    &__franchise
-    {
+    &__franchise {
         width: 198px;
         height: 44px;
         border-radius: 22px;
         outline: none;
-        border: 1px solid red;
+        border: 1px solid $redfont;
         background-color: $white;
         font-size: 16px;
         color: $redfont;
     }
 }
 
-.button-icon
-{
+.button-icon {
     width: 5px;
     height: 8px;
-    margin-left: 13px;
+    margin: auto;
 }
 
+/*--------------------estilos de la ventana modal---------------------------*/
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: $gray-pink;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
 
-.pop-up-modal
-{
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 10px;
+    outline: none;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid $rosedark;
+}
+
+.pop-up-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -142,23 +172,103 @@
     justify-content: center;
     opacity: 1;
     transition-property: opacity;
-    transition-duration: 1000ms;
+    transition-duration: 250ms;
 }
-    
 
-.modal
-{
+.modal {
     margin: auto;
     width: 528px;
     height: 581px;
-    background-color: bisque;
-    transition-property: opacity;
-    transition-duration: 1000ms;
-    
+    padding: 40px;
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(241, 178, 215, 0.12), 0px 1px 1px rgba(241, 192, 223, 0.14),
+        0px 2px 1px rgba(185, 156, 179, 0.2);
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &-text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $redfont;
+    }
 }
 
+.close-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 435px;
+    border-radius: 100%;
+    background-color: $white;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    flex-direction: row-reverse;
+    cursor: pointer;
 
-.is-hidden { 
+    &:hover {
+        color: $rosedark;
+        border-color: $rosedark;
+    }
+}
+
+.send-button {
+    width: 80px;
+    margin-left: 5px;
+    height: 44px;
+    background: $lavender-blush;
+    color: $redfont;
+    font-family: $font-general;
+    border-radius: 22px;
+    border: 1px solid $redfont;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 180px;
+    padding-left: 20px;
+    margin-top: 62px;
+
+    &__local {
+        width: 198px;
+        height: 44px;
+        background: $redfont;
+        color: $white;
+        font-family: $font-general;
+        border-radius: 22px;
+        border-color: 1px solid $rosedark;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 120px;
+        margin-top: 400px;
+        padding-left: 20px;
+    }
+}
+
+.is-hidden {
     visibility: hidden;
     transition-property: visibility;
+    transition: opacity 250ms;
+
+    .pop-up-modal {
+        opacity: 0;
+    }
+
+    .modal {
+        opacity: 0;
+    }
+
+    .close-button {
+        opacity: 0;
+
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .main-contacts {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
