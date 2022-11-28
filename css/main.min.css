@@ -168,9 +168,22 @@ ul {
 .navigation__item:not(:last-child) {
   margin-right: 35px;
 }
+.navigation__item:hover {
+  cursor: pointer;
+  color: #D41443;
+}
 
 @media screen and (max-width: 480px) {
   .header-containertop__button {
+    display: none;
+  }
+  .header-containerdown__right {
+    display: none;
+  }
+  .header-containerdown__leftimage2 {
+    display: none;
+  }
+  .header-containerdown__lefttext {
     display: none;
   }
 }
@@ -192,6 +205,10 @@ ul {
     align-items: center;
     justify-content: space-between;
   }
+  .header-containerbottom {
+    margin: auto;
+    max-width: 1200px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .navigation {
@@ -200,7 +217,6 @@ ul {
 }
 .header-containerbottom {
   margin: auto;
-  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,55 +255,8 @@ ul {
   width: 138px;
   height: 40px;
   color: #D41443;
+  border-radius: 20px;
   border: 1px solid #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.header-containerbottom {
-  background-color: #FFB8CA;
-  width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-containerdown__left {
-  margin-left: 15px;
-}
-
-.header-containerdown__leftbuttons {
-  padding-top: 24px;
-  padding-bottom: 40px;
-}
-
-.button_prod {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #D41443;
-  width: 107px;
-  height: 40px;
-  color: #ffffff;
-  border-radius: 20px;
-  border: none;
-}
-
-.button_how {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #ffffff;
-  width: 138px;
-  height: 40px;
-  color: #D41443;
-  border-radius: 20px;
-  border: none;
 }
 
 .header-containerdown__lefttext {
@@ -752,18 +721,23 @@ ul {
     font-size: 16px;
   }
 }
+.gallery {
+  background-image: linear-gradient(to bottom, #FFF5F6 30%, #ffffff 30%);
+}
+
 .main-gallery {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-gap: 8px;
   padding: 0 94px;
-  margin: 120px auto;
 }
 .main-gallery__item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-gallery__item:nth-child(1) {
   grid-column: 1;
@@ -890,7 +864,9 @@ h3 {
   width: 54px;
   height: 40px;
   fill: #E1E1E1;
+
   animation: animate-comillas 3000ms infinite 1000ms;
+
 }
 
 @keyframes animate-comillas {
@@ -1166,11 +1142,14 @@ textarea {
 }
 footer {
   width: 100%;
-  height: 877px;
+  height: 100%;
   background-color: #FFF5F6;
-  margin: 0 auto;
+  margin-top: 121px;
 }
 
+.footer-content {
+  margin: 0 auto;
+}
 .footer-content__contact {
   display: flex;
   align-items: center;
@@ -1180,7 +1159,6 @@ footer {
 }
 .footer-content__rights {
   font-weight: 700;
-  font-size: 16px;
   color: #907E82;
   font-weight: 700;
   font-size: 14px;
@@ -1199,16 +1177,22 @@ footer {
   line-height: 34px;
   letter-spacing: 0.04em;
   color: #FFA5BA;
+  margin: 0 0 16px;
 }
 .footer-content__title-down {
   font-size: 58px;
   line-height: 66px;
   letter-spacing: 0.06em;
   color: #D41443;
+  margin: 0;
 }
 
 .social-network {
   display: flex;
+  margin-bottom: 40px;
+}
+.social-network:hover {
+  cursor: pointer;
 }
 .social-network__box {
   width: 34px;
@@ -1217,6 +1201,9 @@ footer {
   border: 1px solid #fea5bb;
   border-radius: 50%;
   padding: 7px;
+}
+.social-network__box:not(:last-child) {
+  margin-right: 30px;
 }
 .social-network__icon {
   width: 20px;
@@ -1237,13 +1224,36 @@ footer {
 
 .low-line {
   width: 100%;
-  position: absolute;
   border-top: 1px solid #e1e1e1;
 }
 
 .footer-content--flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
-/*# sourceMappingURL=main.min.css.map */
+@media screen and (max-width: 480px) {
+  .footer-content--flex {
+    display: block;
+    padding: 0 22px;
+  }
+  .footer-content__contact {
+    text-align: right;
+  }
+  .social-network {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container--responsive {
+    padding-top: 60px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    max-width: 1200px;
+  }
+}/*# sourceMappingURL=main.min.css.map */
