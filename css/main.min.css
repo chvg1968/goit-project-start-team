@@ -319,6 +319,8 @@ ul {
   align-items: center;
 }
 .main-products-titles .title1 {
+  margin-top: 60px;
+  margin-bottom: 15px;
   height: 34px;
   width: 280px;
   left: 460px;
@@ -328,7 +330,6 @@ ul {
   font-weight: 400;
   line-height: 34px;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #FFA5BA;
 }
 .main-products-titles .title2 {
@@ -341,23 +342,24 @@ ul {
   font-weight: 400;
   line-height: 66px;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #D41443;
 }
 
 .main-products {
   margin: auto 15px auto;
+  margin-bottom: 60px;
 }
 .main-products__cardsrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 .main-products__cardsrow .card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .main-products__cardsrow .card .top {
   height: 394px;
@@ -394,6 +396,7 @@ ul {
 .main-products__cardsrow .card .content .title1 {
   margin-top: 100px;
   height: 34px;
+  width: 394px;
   left: 16px;
   top: 1287px;
   font-family: Titan One;
@@ -401,7 +404,6 @@ ul {
   font-weight: 400;
   line-height: 34px;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #ffffff;
 }
 .main-products__cardsrow .card .content .title2 {
@@ -428,7 +430,6 @@ ul {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #ffffff;
 }
 .main-products__cardsrow .card .content .icon {
@@ -454,19 +455,41 @@ ul {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) {
-  .main-products__cardsrow {
-    margin: 0 32px;
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .main-products {
+    margin: auto 15px auto;
+    margin-bottom: 60px;
   }
   .main-products__cardsrow .card {
-    border: solid 1px blue;
     width: calc(33% - 8px);
   }
   .main-products__cardsrow .card .top {
-    width: calc(33% - 8px);
+    max-width: 100%;
   }
   .main-products__cardsrow .card .content {
-    width: calc(33% - 8px);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+  .main-products__cardsrow .card .content .title1 {
+    margin-top: -32px;
+    font-size: clamp(0.5rem, 4vw + 1rem, 1rem);
+    margin-bottom: 32px;
+  }
+  .main-products__cardsrow .card .content .title2 {
+    font-size: clamp(0.5rem, 4vw + 1rem, 1rem);
+    margin-bottom: 32px;
+  }
+  .main-products__cardsrow .card .content .p {
+    padding: 0 15px 0 15px;
+    font-size: clamp(0.5rem, 4vw + 1rem, 1rem);
+    width: 100%;
+  }
+  .iceimg {
+    max-width: 100%;
   }
 }
 .about {
