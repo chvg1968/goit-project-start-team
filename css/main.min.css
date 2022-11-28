@@ -736,8 +736,7 @@ ul {
 .main-gallery__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-gallery__item:nth-child(1) {
   grid-column: 1;
@@ -864,9 +863,7 @@ h3 {
   width: 54px;
   height: 40px;
   fill: #E1E1E1;
-
   animation: animate-comillas 3000ms infinite 1000ms;
-
 }
 
 @keyframes animate-comillas {
@@ -1256,4 +1253,6 @@ footer {
   .footer-content {
     max-width: 1200px;
   }
-}/*# sourceMappingURL=main.min.css.map */
+}
+
+/*# sourceMappingURL=main.min.css.map */
