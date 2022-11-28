@@ -786,39 +786,90 @@ ul {
     margin: auto;
   }
 }
-ul {
-  transform: translateX(-100%) infinite;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-review {
+.container {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  list-style: none;
   align-items: center;
+  justify-content: center;
+}
+
+.review {
+  position: relative;
+  max-width: 968px;
+  width: 100%;
+  padding: 50px 0;
   overflow: hidden;
 }
 
-.main-review__customer {
-  width: 968px;
-  height: 138px;
+.review .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 63px;
+}
+
+.slide p {
+  width: 870px;
+  height: 178px;
   background-color: #FAFAFA;
-  margin-bottom: 231px;
-  font-family: DM Sans;
+  text-align: center;
+  padding: 0 90px;
   font-size: 16px;
   font-weight: 500;
-  justify-items: center;
-  text-align: center;
+  line-height: 186%;
   letter-spacing: 0.04em;
+  padding-top: 47px;
+  text-decoration: underline;
+  text-decoration-color: 1px solid #E1E1E1;
+}
+
+span,
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+}
+
+/*swiper btn css*/
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  color: #D9D9D9;
+  transform: rotateY(380deg);
+  transition: all 2s;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #D9D9D9;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D41443;
 }
 
 .review-icon {
   width: 54px;
   height: 40px;
   fill: #E1E1E1;
-  -webkit-animation: animate30 3000ms infinite 1000ms;
-          animation: animate30 3000ms infinite 1000ms;
+
+  animation: animate-comillas 3000ms infinite 1000ms;
+
 }
 
-@-webkit-keyframes animate30 {
+@keyframes animate-comillas {
   0% {
     transform: rotate(0deg);
   }
@@ -829,18 +880,24 @@ ul {
     transform: rotate(0deg);
   }
 }
-
-@keyframes animate30 {
-  0% {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0;
   }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  .nav-btn {
+    display: none;
   }
 }
+@media screen and (min-width: 480px) {
+  .review {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.contact-container {
+  background-image: linear-gradient(to top, #FFF5F6 90%, #ffffff 10%);
+}
+
 .main-contacts {
   list-style: none;
   display: flex;
@@ -861,6 +918,9 @@ ul {
   border-radius: 24px;
   padding-left: 40px;
 }
+.main-contacts__card:hover {
+  transform: scale(1.05);
+}
 
 .card__truck {
   width: 138px;
@@ -870,6 +930,7 @@ ul {
   color: #ffffff;
   border-radius: 6px;
   padding-left: 12px;
+  margin-bottom: 32px;
 }
 .card__title {
   width: 75.1px;
@@ -879,11 +940,14 @@ ul {
   color: #ffffff;
   border-radius: 6px;
   padding-left: 12px;
+  margin-bottom: 32px;
 }
 .card__shedule {
   border-bottom: 1px solid #E1E1E1;
   width: 288px;
   padding-bottom: 32px;
+  line-height: 186%;
+  margin-top: 32px;
 }
 .card__shedule :nth-child(even) {
   color: #FFA5BA;
@@ -896,6 +960,7 @@ ul {
   padding-bottom: 32px;
   border-bottom: 1px solid #E1E1E1;
   width: 288px;
+  margin-top: 32px;
 }
 .card__speakto {
   font-size: 16px;
@@ -904,6 +969,7 @@ ul {
   text-decoration: none;
   color: #907E82;
   margin-right: 78px;
+  margin-top: 32px;
 }
 
 /*botones de contacto*/
@@ -930,7 +996,7 @@ ul {
   height: 44px;
   border-radius: 22px;
   outline: none;
-  border: 1px solid red;
+  border: 1px solid #D41443;
   background-color: #ffffff;
   font-size: 16px;
   color: #D41443;
@@ -939,7 +1005,35 @@ ul {
 .button-icon {
   width: 5px;
   height: 8px;
-  margin-left: 13px;
+  margin: auto;
+}
+
+/*--------------------estilos de la ventana modal---------------------------*/
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  color: #907E82;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 10px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #FFA5BA;
 }
 
 .pop-up-modal {
@@ -954,23 +1048,98 @@ ul {
   justify-content: center;
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 1000ms;
+  transition-duration: 250ms;
 }
 
 .modal {
   margin: auto;
   width: 528px;
   height: 581px;
-  background-color: bisque;
-  transition-property: opacity;
-  transition-duration: 1000ms;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(241, 178, 215, 0.12), 0px 1px 1px rgba(241, 192, 223, 0.14), 0px 2px 1px rgba(185, 156, 179, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #D41443;
+}
+
+.close-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 435px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.close-button:hover {
+  color: #FFA5BA;
+  border-color: #FFA5BA;
+}
+
+.send-button {
+  width: 80px;
+  margin-left: 5px;
+  height: 44px;
+  background: #FFF5F6;
+  color: #D41443;
+  font-family: DM Sans;
+  border-radius: 22px;
+  border: 1px solid #D41443;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 180px;
+  padding-left: 20px;
+  margin-top: 62px;
+}
+.send-button__local {
+  width: 198px;
+  height: 44px;
+  background: #D41443;
+  color: #ffffff;
+  font-family: DM Sans;
+  border-radius: 22px;
+  border-color: 1px solid #FFA5BA;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 120px;
+  margin-top: 400px;
+  padding-left: 20px;
 }
 
 .is-hidden {
   visibility: hidden;
   transition-property: visibility;
+  transition: opacity 250ms;
+}
+.is-hidden .pop-up-modal {
+  opacity: 0;
+}
+.is-hidden .modal {
+  opacity: 0;
+}
+.is-hidden .close-button {
+  opacity: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .main-contacts {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
 footer {
   width: 100%;
   height: 100%;

@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Best Ice-cream on the area " />
-    <meta
-      name="keywords"
-      content="Ice-cream, passion, tradition and love, Homemade"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>IceCream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <header>
-      <section title="hero header">
-        <div class="header--background">
-          <!-- Header top -->
-          <div class="header-containertop">
-            <div>
-              <svg class="header-containertop__logo">
-                <use href="./images/svgs.svg#Logo"></use>
-              </svg>
-            </div>
 
-            <div class="navigation">
-              <nav>
-                <ul class="navigation__list">
-                  <li class="navigation__item">Home</li>
-                  <li class="navigation__item">about us</li>
-                  <li class="navigation__item">How it´s made</li>
-                  <li class="navigation__item">Our Products</li>
-                  <li class="navigation__item">Contact</li>
-                </ul>
-              </nav>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Best Ice-cream on the area " />
+  <meta name="keywords" content="Ice-cream, passion, tradition and love, Homemade" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>IceCream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet" />
+  <!--Swiper css-->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!--css style-->
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
+
+<body>
+  <header>
+    <!-- Header top -->
+    <section title="hero header">
+      <div class="container header--background">
+        <!-- Header top -->
+        <div class="header-containertop">
+          <div>
+            <svg class="header-containertop__logo">
+              <use href="./images/svgs.svg#Logo"></use>
+            </svg>
+          </div>
+          <div class="navigation">
+            <nav>
+              <ul class="navigation__list">
+                <li class="navigation__item">Home</li>
+                <li class="navigation__item">about us</li>
+                <li class="navigation__item">How it´s made</li>
+                <li class="navigation__item">Our Products</li>
+                <li class="navigation__item">Contact</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__itemsright">
+          
             <div class="mobile">
               <button
                 class="mobile__menubtn js-open-menu"
                 aria-expanded="false"
-                aria-controls="mobile"
-              >
+
+            
+         
+
+                aria-controls="mobile">
+
                 <svg class="mobile__menusvg">
                   <use href="./images/svgs.svg#mobilemenu"></use>
                 </svg>
               </button>
             </div>
-
-            <!-- las clases estan en components/_mobilemenu.scss
-            por favor solo modificar .mobile y &__menubtn,
-            no tocar las démas -->
-
             <div>
               <button class="header-containertop__button" type="button">
                 Buy now >
               </button>
             </div>
           </div>
+
 
           <!-- Header buttom -->
 
@@ -118,7 +113,6 @@
             <div class="header-containerdown__centerimage">
               <img src="images/ice-cream.png" alt="Ice Cream" />
             </div>
-
             <div class="header-containerdown__right">
               <div class="header-containerdown__right1">
                 <p class="header-down__cafenumber">16</p>
@@ -173,13 +167,47 @@
                     alt="rowright"
                   />
                 </div>
+
+                <img src="images/tasty.png" alt="Tasty" width="304" height="241" />
               </div>
             </div>
-            <!-- CARD TWO  -->
-            <div class="main-products__cardsrow card">
-              <div class="main-products__cardsrow card top">
-                <img class="iceimg" src="./images/products_icecoffee.png" alt="icecoffee" />
+          </div>
+    </section>
+  </header>
+
+
+  <main>
+    <section title="products" class="products">
+      <div class="main-products-titles">
+        <h2 class="main-products-titles title1">100% natural</h2>
+        <h3 class="main-products-titles title2">PRODUCTS</h3>
+      </div>
+      <div class="main-products">
+        <div class="main-products__cardsrow">
+          <!-- CARD ONE -->
+          <div class="main-products__cardsrow card">
+            <div class="main-products__cardsrow card top">
+              <img class="iceimg" src="./images/products_icecream.png" alt="icecream" />
+            </div>
+            <div class="main-products__cardsrow card content content--color1">
+              <div>
+                <h2 class="main-products__cardsrow card content title1">ICE CREAM</h2>
               </div>
+              <div>
+                <p class="main-products__cardsrow card content title2">...</p>
+
+              </div>
+              <div>
+                <p class="main-products__cardsrow card content p">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat, repudiandae?
+                </p>
+              </div>
+              <div>
+                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png"
+                  alt="rowright" />
+              </div>
+
               <div class="main-products__cardsrow card content content--color2">
                 <div>
                   <h2 class="main-products__cardsrow card content title1">
@@ -233,11 +261,62 @@
                     alt="rowright"
                   />
                 </div>
+
+            </div>
+          </div>
+          <!-- CARD TWO  -->
+          <div class="main-products__cardsrow card">
+            <div class="main-products__cardsrow card top">
+              <img class="iceimg" src="./images/products_icecoffee.png" alt="icecoffee" />
+            </div>
+            <div class="main-products__cardsrow card content content--color2">
+              <div>
+                <h2 class="main-products__cardsrow card content title1">ICE COFFEE</h2>
+              </div>
+              <div>
+                <p class="main-products__cardsrow card content title2">...</p>
+              </div>
+              <div>
+                <p class="main-products__cardsrow card content p">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat, repudiandae?
+                </p>
+              </div>
+              <div>
+                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png"
+                  alt="rowright" />
+              </div>
+            </div>
+          </div>
+          <!-- CARD THREE -->
+          <div class="main-products__cardsrow card">
+            <div class="main-products__cardsrow card top">
+              <img class="iceimg" src="./images/products_milkshakes.png" alt="milk" />
+            </div>
+            <div class="main-products__cardsrow card content content--color3">
+              <div>
+                <h2 class="main-products__cardsrow card content title1">ICE MILKSHAKES</h2>
+              </div>
+              <div>
+                <p class="main-products__cardsrow card content title2">...</p>
+              </div>
+              <div>
+                <p class="main-products__cardsrow card content p">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat, repudiandae?
+                </p>
+              </div>
+              <div>
+                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png"
+                  alt="rowright" />
+
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       <section class="about" title="about how is made">
         <div class="about__container">
@@ -318,6 +397,170 @@
         <div class="main-gallery">
           <div class="main-gallery__item">
             <img src="./images/frame-pic1.png" alt="frame 1" />
+
+    <section class="about" title="about how is made">
+      <div class="about__container">
+        <h2 class="about__h2">tradition and love</h2>
+        <h1 class="about__h1">how it's made?</h1>
+        <div class="about__content">
+          <div class="about__image">
+            <img class="about__img" src="./images/3aboutcow.png" alt="bio eco" />
+          </div>
+          <div class="about__text">
+            <p class="about__p  about__p--bold">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
+              egestas eros. Maecenas eleifend erat at justo fringilla
+            </p>
+            <p class="about__p">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+              placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+              tincidunt.
+            </p>
+            <p class="about__p">
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button class="about__button">Read more
+              <svg class="about__svg">
+                <use href="./images/svgs.svg#button"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" title="advantages">
+      <div class="advantages__container">
+        <h1 class="advantages__h1">advantages</h1>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages1.png" alt="milk">
+          <h3 class="advantages__h3">721</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages2.png" alt="apples">
+          <h3 class="advantages__h3">16kg</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages3.png" alt="Ice-cream heart">
+          <h3 class="advantages__h3">84</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section title="gallery">
+      <div class="main-gallery">
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic1.png" alt="frame 1" />
+        </div>
+        <div class="main-gallery__item">
+          <img " src=" ./images/frame-pic2.png" alt="frame 2" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic3.png" alt="frame 3" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic4.png" alt="frame 4" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic5.png" alt="frame 5" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic6.png" alt="frame 6" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic7.png" alt="frame 7" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic8.png" alt="frame 8" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic9.png" alt="frame 9" />
+        </div>
+        <div class="main-gallery__item">
+          <img src="./images/frame-pic10.png" alt="frame 10" />
+        </div>
+      </div>
+    </section>
+    <!--clients reviews section-->
+    <section class="container">
+      <div class="review mySwiper">
+        <div class="review__content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="./images/customer1.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Emily, Los Angeles</h3>
+            </span>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./images/customer2.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Agata, California</h3>
+            </span>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./images/customer3.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Mila, New York City</h3>
+            </span>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="contact-container">
+      <ul class="main-contacts">
+        <li class="main-contacts__card">
+          <div class="card">
+            <div>
+              <h3 class="card__title">CAFE</h3>
+              <h4>Chicago</h4>
+              <p class="card__info">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+            </div>
+            <div class="card__shedule">
+              <h4>Monday-Friday</h4>
+              <h4>06:00 AM - 10:00 PM</h4>
+              <h4>Saturday-Sunday</h4>
+              <h4>08:00 AM - 16:00 PM</h4>
+            </div>
+            <div class="links">
+              <a class="card__speakto" href="tel:+61(0)383 766 284"> +61(0) 383 766 284</a>
+              <a class="card__speakto" href="mailto:noreply@envato.com"> noreply@envato.com</a>
+            </div>
+
           </div>
           <div class="main-gallery__item">
             <img " src="./images/frame-pic2.png" alt="frame 2"/>
@@ -492,6 +735,72 @@
               </div>
             </li>
           </ul>
+
+            <a class="card__speakto" href="tel:+61(0)383 766 284"> +61(0) 383 766 284</a>
+            <a class="card__speakto" href="mailto:noreply@envato.com"> noreply@envato.com</a>
+          </div>
+        </li>
+      </ul>
+      <div>
+        <ul class="buttons">
+          <li>
+            <button type="button" class="buttons__location" data-modal-open>
+              Our Locations<svg class="button-icon">
+                <use href="./images/SVG/svgs.svg#icon-major"></use>
+              </svg>
+            </button>
+            <!--<div class="is-hidden" data-modal>
+              <div class="pop-up-modal">
+                <div class="modal">
+                  <button class="close-button" type="button" data-modal-close>X</button>
+                  <h3 class="modal-text">We will be glad to see you</h3>
+                  <button type="location" class="send-button__local">Open in Google Maps</button>
+                </div>
+              </div>-->
+          </li>
+          <!--boton de franquicias-->
+          <li>
+            <button type="button" class="buttons__franchise" data-modal-open>
+              Franchise<svg class="button-icon">
+                <use href="./images/svgs.svg#button"></use>
+              </svg>
+            </button>
+            <div class="is-hidden" data-modal>
+              <div class="pop-up-modal">
+                <div class="modal">
+                  <button class="close-button" type="button" data-modal-close>X</button>
+                  <h3 class="modal-text">Leave your details and maybe we will call you back</h3>
+                  <form>
+                    <label>
+                      Name
+                      <input class="form-input" type="text" name="name" autofocus>
+                    </label>
+                    <label>
+                      Number
+                      <input class="form-input" type="tel" name="phone_number" autofocus />
+                    </label>
+                    <label>
+                      Email
+                      <input class="form-input" type="email" name="email">
+                    </label>
+                    <label>
+                      A few words my darling:
+                      <textarea class="form-input" rows="5" placeholder="Write here"></textarea>
+                    </label>
+                  </form>
+                  <button type="submit" class="send-button">Send</button>
+                </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+    <div class="footer-content container">
+      <div class="footer-content--flex">
+        <div class="footer-content__titles">
+          <h2 class="footer-content__title-up">homemade ice cream made</h2>
+          <h2 class="footer-content__title-down">with passion</h2>
+
         </div>
       </section>
     </main>
@@ -547,11 +856,19 @@
       </div>
     </footer>
 
-    <section title="mobile menu">
-      <div class="mobile__container js-menu-container" id="mobile">
-        <button class="mobile__btnclose js-close-menu">
-          <svg class="mobile__svgclose">
-            <use href="./images/svgs.svg#mobileclose"></use>
+  <section title="mobile menu">
+    <div class="mobile__container js-menu-container" id="mobile">
+      <button class="mobile__btnclose js-close-menu">
+        <svg class="mobile__svgclose">
+          <use href="./images/svgs.svg#mobileclose"></use>
+        </svg>
+      </button>
+
+      <div class="mobile__display">
+        <button class="mobile__buy">
+          Buy now
+          <svg class="mobile__buysvg">
+            <use href="./images/svgs.svg#button"></use>
           </svg>
         </button>
 
@@ -569,15 +886,20 @@
           <a class="mobile__link" href="">Contact</a>
         </div>
       </div>
+    </div>
 
-      <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"
-      ></script>
-      <script defer src="./js/menu.js"></script>
-      <script src="./js/modal.js"></script>
-    </section>
-  </body>
+   
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </section>
+
+</body>
+
 </html>
+
