@@ -1,5 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Best Ice-cream on the area " />
+    <meta
+      name="keywords"
+      content="Ice-cream, passion, tradition and love, Homemade"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IceCream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- Swiper css-->
+   
+  </head>
+  
+  <body>
+    <header>
+      <section title="hero header">
+        <div class="header--background">
+          <!-- Header top -->
+          <div class="header-containertop">
+            <div>
+              <svg class="header-containertop__logo">
+                <use href="./images/svgs.svg#Logo"></use>
+              </svg>
+            </div>
+>>>>>>> dev
 
 <head>
   <meta charset="UTF-8" />
@@ -292,42 +339,56 @@
       </div>
     </section>
 
-    <section>
-      <ul class="main-review">
-        <li class="main-review__slide">
-          <img class="customer__image" src="./images/customer1.png" />
-          <p class="main-review__customer"><svg class="review-icon">
-              <use href="./images/SVG/svgs.svg#comillas"></use>
-            </svg><span>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla
-              quam
-              nunc,
-              accumsan
-              congue. Lorem ipsum primis in nibh vel risus.</span></p>
-          <h3>Emily, Los Angeles</h3>
-        </li>
-        <li class="main-review__slide">
-          <img class="customer__image" src="./images/customer2.png" />
-          <p class="main-review__customer"><svg class="review-icon">
-              <use href="./images/SVG/svgs.svg#comillas"></use>
-            </svg>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-            nunc,
-            accumsan
-            congue. Lorem ipsum primis in nibh vel risus.</p>
-          <h3>Emily, Los Angeles</h3>
-        </li>
-        <li class="main-review__slide">
-          <img class="customer__image" src="./images/customer3.png" />
-          <p class="main-review__customer"><svg class="review-icon">
-              <use href="./images/SVG/svgs.svg#comillas"></use>
-            </svg>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam
-            nunc,
-            accumsan
-            congue. Lorem ipsum primis in nibh vel risus.</p>
-          <h3>Emily, Los Angeles</h3>
-        </li>
-      </ul>
+    <!--clients reviews section-->
+    <section class="container">
+      <div class="review mySwiper">
+        <div class="review__content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="./images/customer1.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Emily, Los Angeles</h3>
+            </span>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./images/customer2.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Agata, California</h3>
+            </span>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./images/customer3.png" alt="cliente">
+            <p><svg class="review-icon">
+                <use href="./images/SVG/svgs.svg#comillas"></use>
+              </svg>
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan
+              congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+            <span>
+              <h3>Mila, New York City</h3>
+            </span>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
-    <section>
+    <section class="contact-container">
       <ul class="main-contacts">
         <li class="main-contacts__card">
           <div class="card">
@@ -390,43 +451,74 @@
           </div>
         </li>
       </ul>
+      <!--botones contactos-->
       <div>
         <ul class="buttons">
           <li>
-            <button type="button" class="buttons__location">
+            <button type="button" class="buttons__location" data-modal-open>
               Our Locations<svg class="button-icon">
                 <use href="./images/SVG/svgs.svg#icon-major"></use>
               </svg>
             </button>
+            <!--<div class="is-hidden" data-modal>
+              <div class="pop-up-modal">
+                <div class="modal">
+                  <button class="close-button" type="button" data-modal-close>X</button>
+                  <h3 class="modal-text">We will be glad to see you</h3>
+                  <button type="location" class="send-button__local">Open in Google Maps</button>
+                </div>
+              </div>-->
           </li>
+<<<<<<< HEAD
 
+=======
+          <!--boton de franquicias-->
+>>>>>>> dev
           <li>
             <button type="button" class="buttons__franchise" data-modal-open>
-              Franchise
-              <svg class="button-icon">
-                <use href="./images/SVG/svgs.svg#button"></use>
+              Franchise<svg class="button-icon">
+                <use href="./images/svgs.svg#button"></use>
               </svg>
             </button>
             <div class="is-hidden" data-modal>
               <div class="pop-up-modal">
                 <div class="modal">
-                  here
                   <button class="close-button" type="button" data-modal-close>X</button>
+                  <h3 class="modal-text">Leave your details and maybe we will call you back</h3>
+                  <form>
+                    <label>
+                      Name
+                      <input class="form-input" type="text" name="name" autofocus>
+                    </label>
+                    <label>
+                      Number
+                      <input class="form-input" type="tel" name="phone_number" autofocus />
+                    </label>
+                    <label>
+                      Email
+                      <input class="form-input" type="email" name="email">
+                    </label>
+                    <label>
+                      A few words my darling:
+                      <textarea class="form-input" rows="5" placeholder="Write here"></textarea>
+                    </label>
+                  </form>
+                  <button type="submit" class="send-button">Send</button>
                 </div>
               </div>
             </div>
-
           </li>
+<<<<<<< HEAD
 
         </ul>
       </div>
+=======
+      </ul>   
+>>>>>>> dev
     </section>
   </main>
 
   <footer>
-    <!--Botones de contacto en el footer-->
-
-
     <!-- Pie de página -->
     <div class="footer-content">
       <div class="footer-content--flex">

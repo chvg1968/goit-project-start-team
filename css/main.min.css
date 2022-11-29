@@ -1,3 +1,102 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  position: relative;
+  max-width: 968px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.review .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 63px;
+}
+
+.slide p {
+  width: 870px;
+  height: 178px;
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 0 90px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  padding-top: 47px;
+  text-decoration: underline 1px solid #E1E1E1;
+}
+
+span,
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+}
+
+/*swiper btn css*/
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  color: #D9D9D9;
+  transform: rotateY(380deg);
+  transition: all 2s;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #D9D9D9;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #D41443;
+}
+
+.review-icon {
+  width: 54px;
+  height: 40px;
+  fill: #E1E1E1;
+  animation: animate-comillas 3000ms infinite 1000ms;
+}
+
+@keyframes animate-comillas {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .review {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
 .mobile__menubtn {
   padding: 0;
   background-color: transparent;
@@ -863,112 +962,6 @@ ul {
     margin: auto;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.review {
-  position: relative;
-  max-width: 968px;
-  width: 100%;
-  padding: 50px 0;
-  overflow: hidden;
-}
-
-.review .slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  row-gap: 63px;
-}
-
-.slide p {
-  width: 870px;
-  height: 178px;
-  background-color: #FAFAFA;
-  text-align: center;
-  padding: 0 90px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 186%;
-  letter-spacing: 0.04em;
-  padding-top: 47px;
-  text-decoration: underline;
-  text-decoration-color: 1px solid #E1E1E1;
-}
-
-span,
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 186%;
-}
-
-/*swiper btn css*/
-.nav-btn {
-  width: 40px;
-  height: 40px;
-  color: #D9D9D9;
-  transform: rotateY(380deg);
-  transition: all 2s;
-}
-
-.nav-btn::before,
-.nav-btn::after {
-  font-size: 30px;
-}
-
-.swiper-pagination-bullet {
-  background-color: #D9D9D9;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #D41443;
-}
-
-.review-icon {
-  width: 54px;
-  height: 40px;
-  fill: #E1E1E1;
-  animation: animate-comillas 3000ms infinite 1000ms;
-}
-
-@keyframes animate-comillas {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@media screen and (max-width: 768px) {
-  .slide p {
-    padding: 0;
-  }
-  .nav-btn {
-    display: none;
-  }
-}
-@media screen and (min-width: 480px) {
-  .review {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
 .contact-container {
   background-image: linear-gradient(to top, #FFF5F6 90%, #ffffff 10%);
 }
@@ -979,7 +972,6 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   margin-right: 32px;
-  margin-left: 32px;
 }
 .main-contacts__info {
   justify-content: center;
@@ -1015,14 +1007,11 @@ h3 {
   color: #ffffff;
   border-radius: 6px;
   padding-left: 12px;
-  margin-bottom: 32px;
 }
 .card__shedule {
   border-bottom: 1px solid #E1E1E1;
   width: 288px;
-  padding-bottom: 32px;
   line-height: 186%;
-  margin-top: 32px;
 }
 .card__shedule :nth-child(even) {
   color: #FFA5BA;
@@ -1032,10 +1021,9 @@ h3 {
   font-size: 16px;
   line-height: 183%;
   color: #907E82;
-  padding-bottom: 32px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #E1E1E1;
   width: 288px;
-  margin-top: 32px;
 }
 .card__speakto {
   font-size: 16px;
@@ -1044,16 +1032,18 @@ h3 {
   text-decoration: none;
   color: #907E82;
   margin-right: 78px;
-  margin-top: 32px;
 }
 
 /*botones de contacto*/
 .buttons {
+  height: 144px;
   display: flex;
   justify-content: center;
   margin-top: 70px;
   margin-right: 12px;
   font-family: DM Sans;
+  background-color: #FFF5F6;
+  margin-bottom: -121px;
 }
 .buttons__location {
   width: 198px;
