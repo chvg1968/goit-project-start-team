@@ -13,7 +13,6 @@
     justify-content: space-evenly;
     align-items: center;
     margin-right: 32px;
-    margin-left: 32px;
 
 
     &__info {
@@ -56,17 +55,13 @@
         color: $white;
         border-radius: 6px;
         padding-left: 12px;
-        margin-bottom: 32px;
     }
 
     &__shedule {
         border-bottom: 1px solid $light-silvercolor;
         width: 288px;
-        padding-bottom: 32px;
         line-height: 186%;
-        margin-top: 32px;
-
-
+        
         & :nth-child(even) {
             color: $rosedark;
             font-weight: 500;
@@ -77,10 +72,9 @@
         font-size: 16px;
         line-height: 183%;
         color: $gray-pink;
-        padding-bottom: 32px;
+        padding-bottom: 22px;
         border-bottom: 1px solid $light-silvercolor;
         width: 288px;
-        margin-top: 32px;
     }
 
     &__speakto {
@@ -90,17 +84,19 @@
         text-decoration: none;
         color: $gray-pink;
         margin-right: 78px;
-        margin-top: 32px;
     }
 }
 
 /*botones de contacto*/
 .buttons {
+    height: 144px;
     display: flex;
     justify-content: center;
     margin-top: 70px;
     margin-right: 12px;
     font-family: $font-general;
+    background-color: $lavender-blush;
+    margin-bottom: -121px;
 
     &__location {
         width: 198px;
