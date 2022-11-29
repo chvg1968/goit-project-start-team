@@ -14,14 +14,13 @@ footer {
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     color: $black;
   }
 
   &__rights {
     font-weight: 700;
     color: $gray-pink;
-    font-weight: 700;
     font-size: 14px;
     line-height: 186%;
     letter-spacing: 0.02em;
@@ -55,6 +54,7 @@ footer {
 .social-network {
   display: flex;
   margin-bottom: 40px;
+  padding-left: 40%;
 
   &:hover {
     cursor: pointer;
@@ -77,18 +77,21 @@ footer {
     width: 20px;
     height: 20px;
   }
+
+  &__box:hover {
+    transform: scale(1.1);
+  }
 }
 
 .contact__tel {
   font-weight: 700;
-  font-size: 16px;
   color: $redfont;
   text-decoration: none;
   margin-left: 2px;
-}
-
-.contact__tel:hover {
-  transform: scale(1.05);
+  
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .low-line {
@@ -121,9 +124,8 @@ footer {
 }
 
 @media screen and (min-width: 480px) {
-  .container--responsive {
+  .footer__container--responsive {
     padding-top: 60px;
-    font-size: 14px;
   }
 }
 
