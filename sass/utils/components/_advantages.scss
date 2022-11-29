@@ -2,12 +2,20 @@
 
 .advantages {
     padding-left: 20px;
-    padding-bottom: 87px;
+    padding-bottom: 60px;
     background-color: $lavender-blush;
     background-image: url("./599502.png");
     background-size: 50px 50px;
+    
+    &__container {
 
-
+        &:hover {
+            .advantages__item {  
+                transform: rotate(360deg);
+            }
+        }
+    }
+    
     &__h1 {
         display: none;
     }
@@ -15,10 +23,17 @@
     &__item {
         margin-bottom: 32px;
         width: 230px;
+        transition-property: transform;
+        transition-duration: 1500ms;
+        transition-timing-function: ease-in-out;
     }
 
     &__img {
         margin-bottom: 16px;
+        animation-name: advpngrotate;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     &__h3 {
@@ -42,7 +57,7 @@
 
 @media screen and (min-width: 768px) {
     .advantages {
-        padding-bottom: 251px;
+        padding-bottom: 64px;
         padding-left: 32px;
         display: flex;
 
@@ -68,7 +83,7 @@
 @media screen and (min-width: 1200px) {
     .advantages {
         padding-left: 32px;
-        padding-bottom: 209px;
+        padding-bottom: 120px;
 
         &__container {
             margin: auto;
@@ -93,4 +108,13 @@
 
     }
     
+}
+
+@keyframes advpngrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
