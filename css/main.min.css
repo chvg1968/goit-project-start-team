@@ -323,6 +323,16 @@ ul {
 
 .header-containerdown__left {
   margin-left: 15px;
+  padding-right: 80px;
+  margin-bottom: -80px;
+}
+
+.header-containerdown__leftimage1 {
+  margin-top: 60px;
+}
+
+.header-containerdown__leftimage1 {
+  margin-top: 60px;
 }
 
 .header-containerdown__leftbuttons {
@@ -333,64 +343,95 @@ ul {
 .button_prod {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   background-color: #D41443;
-  width: 107px;
-  height: 40px;
+  padding: 11px 23px;
   color: #ffffff;
   border-radius: 20px;
   border: none;
+  border: 1px solid #D41443;
 }
 
 .button_how {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   background-color: #ffffff;
-  width: 138px;
-  height: 40px;
+  padding: 11px 23px;
   color: #D41443;
   border-radius: 20px;
   border: 1px solid #ffffff;
 }
 
+.button_how:hover {
+  background: #ECEBEB;
+  border: 1px solid #ECEBEB;
+}
+
 .header-containerdown__lefttext {
   width: 200px;
+  position: relative;
+  top: -160px;
+  left: 250px;
 }
 
 .header-containerdown__leftimage2,
 .header-containerdown__lefttext {
-  display: inline-block;
+  width: 200px;
+  position: relative;
+  top: -160px;
+  left: 250px;
 }
 
-.header-down__text {
+.header-down__lefttext {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
   color: #ffffff;
+}
+
+.header-containerdown__centerbg {
+  background-color: #FFA5BA;
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  left: 140px;
+}
+
+.header-containerdown__centerimage {
+  position: relative;
+  top: 44px;
+  left: 120px;
 }
 
 .header-containerdown__right {
   margin-right: 15px;
+  z-index: 1;
 }
 
 .header-containerdown__right1,
 .header-containerdown__right2 {
-  margin-left: 200px;
+  margin-top: 68px;
+  margin-left: 250px;
+  margin-bottom: 60px;
   background-color: #ffffff;
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
 
-.header-down__cafenumber,
-.header-down__foodnumber {
+.header-down__number {
   font-family: Titan One;
   font-style: normal;
   font-weight: 400;
@@ -400,10 +441,47 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
+  position: relative;
+  top: 5px;
+  right: 42px;
+}
+
+.header-down__righttext {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  top: 8px;
+  right: 22px;
+}
+
+.header-containerdown__right2 p:last-child {
+  width: max-content;
+  right: 60px;
+}
+
+.header-down__righttext {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  top: 8px;
+  right: 22px;
+}
+
+.header-containerdown__right2 p:last-child {
+  width: max-content;
+  right: 60px;
 }
 
 .header-containerdown__right3 {
-  padding-top: 160px;
+  padding-top: 65px;
 }
 
 .products {
@@ -1141,13 +1219,12 @@ footer {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
 }
 .footer-content__rights {
   font-weight: 700;
   color: #907E82;
-  font-weight: 700;
   font-size: 14px;
   line-height: 186%;
   letter-spacing: 0.02em;
@@ -1177,9 +1254,7 @@ footer {
 .social-network {
   display: flex;
   margin-bottom: 40px;
-}
-.social-network:hover {
-  cursor: pointer;
+  padding-left: 40%;
 }
 .social-network__box {
   width: 34px;
@@ -1188,9 +1263,6 @@ footer {
   border: 1px solid #fea5bb;
   border-radius: 50%;
   padding: 7px;
-}
-.social-network__box:not(:last-child) {
-  margin-right: 30px;
 }
 .social-network__icon {
   width: 20px;
@@ -1211,38 +1283,13 @@ footer {
 
 .low-line {
   width: 100%;
+  position: absolute;
   border-top: 1px solid #e1e1e1;
 }
 
 .footer-content--flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-content--flex {
-    display: block;
-    padding: 0 22px;
-  }
-  .footer-content__contact {
-    text-align: right;
-  }
-  .social-network {
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container--responsive {
-    padding-top: 60px;
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-content {
-    max-width: 1200px;
-  }
 }
 
 /*# sourceMappingURL=main.min.css.map */
