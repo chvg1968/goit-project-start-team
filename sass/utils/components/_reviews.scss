@@ -1,10 +1,6 @@
 @use "../variables";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .container {
     height: 100vh;
@@ -41,8 +37,7 @@
     line-height: 186%;
     letter-spacing: 0.04em;
     padding-top: 47px;
-    text-decoration: underline;
-    text-decoration-color: 1px solid $light-silvercolor;
+    text-decoration: underline 1px solid $light-silvercolor;
 }
 
 span,
