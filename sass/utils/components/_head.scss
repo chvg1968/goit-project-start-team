@@ -1,44 +1,128 @@
 @use  "../variables";
 
-.header--background {
-  background-color: $rosebackground;
+.header {
+
+  &--background {
+    background-color: $rosebackground;
+  }
+
+  &-containertop {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+
+    &__logo {
+      height: 50px;
+      width: 199px;
+    }
+  
+
+    &__button {
+      width: 159px;
+      height: 44px;
+      background-color: $white;
+      border-radius: 22px;
+      color: $redfont;
+      border: 1px solid $white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+
+  &__itemsright {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.header-containertop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navigation {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__item:hover {
+    cursor: pointer;
+    color: $redfont;
+  }
 }
 
-.navigation__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+@media screen and (max-width: 480px) {
+  .header-containertop__button {
+    display: none;
+  }
+
+  .header-containerdown__right {
+    display: none;
+  }
+
+  .header-containerdown__leftimage2 {
+    display: none;
+  }
+
+  .header-containerdown__lefttext {
+    display: none;
+  }
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 35px;
+
+@media screen and (min-width: 480px) {
+  .header {
+    &-containertop {
+      padding-top: 32px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
 }
 
-.header-containertop__button {
-  width: 159px;
-  height: 44px;
-  background-color: $white;
-  border-radius: 22px;
-  color: $redfont;
-  border: 1px solid $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &-containertop {
+      margin: auto;
+      padding-top: 37px;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-containerbottom {
+      margin: auto;
+      max-width: 1200px;
+    }
+  }
 }
+
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
+}
+
 
 .header-containerbottom {
-  background-color: $rosebackground;
-  width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,6 +130,12 @@
 
 .header-containerdown__left {
   margin-left: 15px;
+  padding-right: 80px;
+  margin-bottom: -80px;
+}
+
+.header-containerdown__leftimage1 {
+  margin-top: 60px;
 }
 
 .header-containerdown__leftbuttons {
@@ -54,66 +144,89 @@
 }
 
 .button_prod {
-font-family: $font-general;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-background-color: $redfont;
-width: 107px;
-height: 40px;
-color: $white;
-border-radius: 20px;
-border: none;
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $redfont;
+  padding: 11px 23px;
+  color: $white;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid $redfont;
 }
 
 .button_how {
   font-family: $font-general;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   background-color: $white;
-  width: 138px;
-  height: 40px;
+  padding: 11px 23px;
   color: $redfont;
   border-radius: 20px;
-  border: none;
+  border: 1px solid $white;
+}
+
+.button_how:hover {
+  background: $hover-howbutton;
+  border: 1px solid $hover-howbutton;
 }
 
 .header-containerdown__lefttext {
   width: 200px;
+  position: relative;
+  top: -160px;
+  left: 250px;
 }
 
-.header-containerdown__leftimage2,
-.header-containerdown__lefttext {
-  display: inline-block;
-}
-
-.header-down__text {
+.header-down__lefttext {
   font-family: $font-general;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  padding-bottom: 20px;
   color: $white;
+}
+
+.header-containerdown__centerbg {
+  background-color: $rosedark;
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  left: 140px;
+}
+
+.header-containerdown__centerimage {
+  position: relative;
+  top: 44px;
+  left: 120px;
 }
 
 .header-containerdown__right {
   margin-right: 15px;
+  z-index: 1;
 }
 
 .header-containerdown__right1,
 .header-containerdown__right2 {
-  margin-left: 200px;
+  margin-top: 68px;
+  margin-left: 250px;
+  margin-bottom: 60px;
   background-color: $white;
   width: 30px;
   height: 30px;
   border-radius: 50px;
 }
 
-.header-down__cafenumber,
-.header-down__foodnumber {
+.header-down__number {
   font-family: $font-title;
   font-style: normal;
   font-weight: 400;
@@ -123,8 +236,28 @@ border: none;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $redfont;
+  position: relative;
+  top: 5px;
+  right: 42px;
+}
+
+.header-down__righttext {
+  font-family: $font-general;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  position: relative;
+  top: 8px;
+  right: 22px;
+}
+
+.header-containerdown__right2 p:last-child {
+  width: max-content;
+  right: 60px;
 }
 
 .header-containerdown__right3 {
-  padding-top: 160px;
+  padding-top: 65px;
 }

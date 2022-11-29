@@ -1,1 +1,114 @@
-@use  "../variables";
+@use "../variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review {
+    position: relative;
+    max-width: 968px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.review .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 63px;
+}
+
+.slide p {
+    width: 870px;
+    height: 178px;
+    background-color: $shade-ofgray;
+    text-align: center;
+    padding: 0 90px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    padding-top: 47px;
+    text-decoration: underline;
+    text-decoration-color: 1px solid $light-silvercolor;
+}
+
+span,
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+}
+
+/*swiper btn css*/
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    color: $swiper-color;
+    transform: rotateY(380deg);
+    transition: all 2s;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    font-size: 30px;
+}
+
+.swiper-pagination-bullet {
+    background-color: $swiper-color;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $redfont;
+}
+
+.review-icon {
+    width: 54px;
+    height: 40px;
+    fill: $light-silvercolor;
+    animation: animate-comillas 3000ms infinite 1000ms;
+}
+
+
+@keyframes animate-comillas {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 0;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .review {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
