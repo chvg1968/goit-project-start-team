@@ -232,6 +232,10 @@ ul {
   margin-top: 60px;
 }
 
+.header-containerdown__leftimage1 {
+  margin-top: 60px;
+}
+
 .header-containerdown__leftbuttons {
   padding-top: 24px;
   padding-bottom: 40px;
@@ -269,6 +273,14 @@ ul {
   border: 1px solid #ECEBEB;
 }
 
+.header-containerdown__lefttext {
+  width: 200px;
+  position: relative;
+  top: -160px;
+  left: 250px;
+}
+
+.header-containerdown__leftimage2,
 .header-containerdown__lefttext {
   width: 200px;
   position: relative;
@@ -333,6 +345,23 @@ ul {
   position: relative;
   top: 5px;
   right: 42px;
+}
+
+.header-down__righttext {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  top: 8px;
+  right: 22px;
+}
+
+.header-containerdown__right2 p:last-child {
+  width: max-content;
+  right: 60px;
 }
 
 .header-down__righttext {
@@ -1237,9 +1266,6 @@ footer {
   margin-bottom: 40px;
   padding-left: 40%;
 }
-.social-network:hover {
-  cursor: pointer;
-}
 .social-network__box {
   width: 34px;
   height: 34px;
@@ -1248,60 +1274,32 @@ footer {
   border-radius: 50%;
   padding: 7px;
 }
-.social-network__box:not(:last-child) {
-  margin-right: 30px;
-}
 .social-network__icon {
   width: 20px;
   height: 20px;
 }
-.social-network__box:hover {
-  transform: scale(1.1);
-}
 
 .contact__tel {
   font-weight: 700;
+  font-size: 16px;
   color: #D41443;
   text-decoration: none;
   margin-left: 2px;
 }
+
 .contact__tel:hover {
   transform: scale(1.05);
 }
 
 .low-line {
   width: 100%;
+  position: absolute;
   border-top: 1px solid #e1e1e1;
 }
 
 .footer-content--flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-content--flex {
-    display: block;
-    padding: 0 22px;
-  }
-  .footer-content__contact {
-    text-align: right;
-  }
-  .social-network {
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .footer__container--responsive {
-    padding-top: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-content {
-    max-width: 1200px;
-  }
 }
 
 /*# sourceMappingURL=main.min.css.map */
