@@ -1266,6 +1266,9 @@ label {
   color: #907E82;
   font-size: 12px;
   letter-spacing: 0.03em;
+  margin: auto;
+  padding-bottom: 10px;
+  text-align: start;
 }
 
 input,
@@ -1301,7 +1304,7 @@ textarea {
 
 .modal {
   margin: auto;
-  width: 528px;
+  width: 428px;
   height: 581px;
   padding: 40px;
   background-color: #ffffff;
@@ -1323,7 +1326,7 @@ textarea {
   position: relative;
   width: 30px;
   height: 30px;
-  margin-left: 435px;
+  margin-left: 325px;
   border-radius: 100%;
   background-color: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1347,7 +1350,7 @@ textarea {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 180px;
+  margin-left: 140px;
   padding-left: 20px;
   margin-top: 62px;
 }
@@ -1362,7 +1365,7 @@ textarea {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 120px;
+  margin-left: 80px;
   margin-top: 400px;
   padding-left: 20px;
 }
