@@ -1,174 +1,367 @@
 @use  "../variables";
 
-.header--background {
-  background-color: $rosebackground;
+.header {
+
+  &--background {
+    background-color: $rosebackground;
+  }
+
+  &__container {
+    margin: auto;
+    max-width: 1200px;
+    background-image: url("./../images/ice-cream.png");
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: 10vw bottom;
+  }
+
+  &-containertop {
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      height: 50px;
+      width: 199px;
+    }
+  
+    &__button {
+      width: 159px;
+      height: 44px;
+      background-color: $white;
+      border-radius: 22px;
+      color: $redfont;
+      border: 1px solid $white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      transition-duration: 250ms;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &__itemsright {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.header-containertop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navigation {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__item {
+    margin-right: 35px;
+    color: white;
+    transition-duration: 250ms;
+    &--select {
+      color: $redfont;
+    }
+    &:hover {
+      cursor: pointer;
+      color: $redfont;
+    }
+  }
 }
 
-.navigation__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 35px;
-}
-
-.header-containertop__button {
-  width: 159px;
-  height: 44px;
-  background-color: $white;
-  border-radius: 22px;
-  color: $redfont;
-  border: 1px solid $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-}
 
 .header-containerbottom {
-  background-color: $rosebackground;
-  width: 1200px;
+  padding-left: 15px;
+  padding-top: 136px;
+  padding-bottom: 158px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.header-containerdown__left {
-  margin-left: 15px;
-  padding-right: 80px;
-  margin-bottom: -80px;
 }
 
 .header-containerdown__leftimage1 {
-  margin-top: 60px;
+  width: 218px;
 }
 
 .header-containerdown__leftbuttons {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  margin-top: 20px;
 }
 
 .button_prod {
+  margin-right: 4px;
   font-family: $font-general;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 8px;
   line-height: 18px;
   background-color: $redfont;
-  padding: 11px 23px;
+  width: 61px;
+  height: 24px;
   color: $white;
   border-radius: 20px;
   border: none;
-  border: 1px solid $redfont;
+  transition-duration: 250ms;
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .button_how {
   font-family: $font-general;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 8px;
   line-height: 18px;
   background-color: $white;
-  padding: 11px 23px;
+  width: 83px;
+  height: 24px;
   color: $redfont;
   border-radius: 20px;
-  border: none;
+  border: 1px solid $white;
+  transition-duration: 250ms;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.header-containerdown__leftimage2,
+.header-containerdown__lefttext {
+  display: inline-block;
+}
+
+.header-containerdown__leftimage2 {
+  margin-top: 20px;
+  width: 152px;
 }
 
 .header-containerdown__lefttext {
-  width: 200px;
-  position: relative;
-  top: -160px;
-  left: 250px;
+  width: 114px;
 }
 
-.header-down__lefttext {
-  font-family: $font-general;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  color: $white;
-}
-
-.header-containerdown__centerbg {
-  background-color: $rosedark;
-  width: 534px;
-  height: 534px;
-  border-radius: 50%;
-  position: relative;
-  top: -50px;
-  left: 140px;
-}
-
-.header-containerdown__centerimage {
-  position: relative;
-  top: 44px;
-  left: 120px;
+.header-down__arrow {
+  width: 18px;
+  height: 18px;
+  transition-duration: 250ms;
+  &:hover {
+    transform: rotate(90deg);
+  }
 }
 
 .header-containerdown__right {
-  margin-right: 15px;
-  z-index: 1;
-}
-
-.header-containerdown__right1,
-.header-containerdown__right2 {
-  margin-top: 68px;
-  margin-left: 250px;
-  margin-bottom: 60px;
-  background-color: $white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-}
-
-.header-down__number {
-  font-family: $font-title;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 53px;
   text-align: right;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-down__cafenumber,
+.header-down__foodnumber {
+  position: relative;
+  margin: 0px;
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 28px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $redfont;
-  position: relative;
-  top: 5px;
-  right: 42px;
+  z-index: 10;
+
+  &::after {
+    position: absolute;
+    right: -10px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: white;
+    z-index: -1;
+  }
 }
 
-.header-down__righttext {
-  font-family: $font-general;
-  font-style: normal;
+.header-down__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $white;
-  position: relative;
-  top: 8px;
-  right: 22px;
-}
+  font-size: 8px;
+  color: #FFFFFF;
 
-.header-containerdown__right2 p:last-child {
-  width: max-content;
-  right: 60px;
 }
 
 .header-containerdown__right3 {
-  padding-top: 65px;
+  width: 190px;
+  height: 150px;
+}
+
+@media screen and (min-width: 480px) {
+   .header__container {
+    background-position: 75% bottom;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-containertop__button {
+    display: none;
+  }
+
+  .header-containerdown__right {
+    display: none;
+  }
+
+  .header-containerdown__leftimage2 {
+    display: none;
+  }
+
+  .header-containerdown__lefttext {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .header {
+
+    &__container {
+      background-image: url("./../images/ice-cream.png");
+      background-repeat: no-repeat;
+      background-size: 350px;
+      background-position: 50% bottom;
+    }
+
+    &-containertop {
+      padding-top: 32px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  .header-containerbottom {
+    padding-left: 32px;
+    padding-right: 42px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .header-containerdown__left {
+    margin-bottom: 16px;
+  }
+
+  .header-containerdown__leftimage1 {
+    width: 162px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .header {
+
+    &__container {
+      background-image: url("./../images/ice-cream.png");
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: 78% bottom;
+    }
+
+    &-containertop {
+      margin: auto;
+      padding-top: 37px;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-containerbottom {
+      margin: auto;
+      padding-top: 60px;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1200px;
+    }
+  }
+
+  .header-containerdown__left {
+    margin-bottom: 60px;
+  }
+
+  .header-containerdown__leftimage1 {
+    width: 277px;
+  }
+
+  .header-containerdown__leftbuttons {
+    margin-top: 24px;
+  }
+  
+  .button_prod {
+    margin-right: 8px;
+    font-size: 14px;
+    width: 107px;
+    height: 40px;
+  }
+  
+  .button_how {
+    font-size: 14px;
+    width: 138px;
+    height: 40px;
+  }
+  
+  .header-containerdown__leftimage2 {
+    margin-top: 40px;
+    width: 213px;
+  }
+  
+  .header-containerdown__lefttext {
+    width: 200px;
+  }
+
+  .header-down__arrow {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .header-down__text {
+    font-size: 14px;
+    line-height: 1.40;
+  }
+
+  .header-containerdown__right1,
+  .header-containerdown__right2 {
+    margin-right: 58px;
+    margin-bottom: 18px;
+  }
+  
+  .header-down__cafenumber,
+  .header-down__foodnumber {
+    font-size: 46px;
+  
+    &::after {
+      top: -4px;
+      right: -18px;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+    }
+  }
+  
+  
+  .header-containerdown__right3 {
+    width: 304px;
+    height: 241px;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
 }
