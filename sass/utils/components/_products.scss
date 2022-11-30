@@ -1,7 +1,7 @@
 @use "../variables";
 
 .products {
-    width: $width-responsive1200;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -15,7 +15,6 @@
         margin-top: 60px;
         margin-bottom: 15px;
         height: 34px;
-        width: 280px;
         left: 460px;
         top: 725px;
         font-family: $font-title;
@@ -23,14 +22,17 @@
         font-weight: 400;
         line-height: 34px;
         letter-spacing: 0.04em;
-        
         color: $rosedark;
-
+        &:hover {
+            animation-name: letterspacing;
+            animation-duration: 1500ms;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
     }
 
     .title2 {
         height: 66px;
-        width: 394px;
         left: 403px;
         top: 775px;
         font-family: $font-title;
@@ -38,8 +40,13 @@
         font-weight: 400;
         line-height: 66px;
         letter-spacing: 0.06em;
-        
         color: $redfont;
+        &:hover {
+            animation-name: letterspacing1;
+            animation-duration: 1500ms;
+            animation-timing-function: ease-in-out;
+            cursor: pointer;
+        }
     }
 }
 
@@ -49,7 +56,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 535px;
-    width: 368px;
+    width: 90%;
     left: 16px;
     top: 1122px;
     border-radius: 24px;
@@ -62,23 +69,21 @@
     left: 16px;
     top: 1287px;
     font-family: $font-title;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0.04em;
-    
     color: $white;
 }
 
 @mixin content-title2 {
     height: 30px;
-    width: 30px;
     left: 206px;
     top: 1353px;
     border-radius: 0px;
     font-weight: 700;
     font-family: $font-title;
-    font-size: 30px;
+    font-size: 20px;
     color: $white;
 }
 
@@ -89,11 +94,10 @@
     left: 77px;
     top: 1391px;
     font-family: $font-general;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 28px;
-    letter-spacing: 0.04em;
-    
+    letter-spacing: 0.04em; 
     color: $white;
 }
 
@@ -111,22 +115,18 @@
 
     &__cardsrow {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 15px;
-        
-
+      
         .card {
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
+            width: 100%;
             
 
             .top {
-                
-                height: 394px;
-                width: 368px;
+                width: 100%;
                 left: 16px;
                 top: 861px;
                 border-radius: 0px;
@@ -154,6 +154,7 @@
                 .title1 {
                     margin-top:100px;
                     @include content-title1;
+                    font-weight: 50px;
                 }
 
                 .title2 {
@@ -172,6 +173,10 @@
             }
         }
     }
+
+    &__img {
+        width: 100%;
+    }
 }
 
 .main-products__cardsrow .card:hover {
@@ -184,14 +189,14 @@
 }
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     .main-products__cardsrow {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:960px){
+@media screen and (min-width:768px){
     .main-products {
         margin:auto 15px auto; 
         margin-bottom: 60px;
@@ -213,19 +218,18 @@
                     align-items: center;
                     text-align: center;
                     gap:32px;
+
                 .title1{
-                    margin-top:-32px;
-                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
-                    margin-bottom:32px;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
                     
                 }
                 .title2{
-                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
+                    letter-spacing: 0.1em;
                     margin-bottom:32px;
                 }
                 .p{ 
                     padding: 0 15px 0 15px;
-                    font-size: clamp(0.5rem,4vw + 1rem, 1rem);
                     width: 100%;
                 }
                 }
@@ -235,4 +239,21 @@
     .iceimg{
         max-width: 100%;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-products {
+            .card {
+                
+                .title1{
+                    font-size: 30px;
+                }
+                .title2{
+                    font-size:30px;
+                }
+                .p{ 
+                    font-size: 16px;
+                }
+            }
+        }
 }

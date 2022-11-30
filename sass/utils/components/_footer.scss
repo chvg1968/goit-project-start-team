@@ -1,76 +1,94 @@
 @use "../variables";
 
 footer {
-  width: 100%;
-  height: 100%;
   background-color: $lavender-blush;
-  margin-top: 121px;
+  margin-top: 0;
+  padding-bottom: 15px;
 }
 
 .footer-content {
-  margin: 0 auto;
-
-  &__contact {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 16px;
-    color: $black;
-  }
-
-  &__rights {
-    font-weight: 700;
-    color: $gray-pink;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 186%;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
+  padding: 0 20px;
 
   &__titles {
     font-family: "Titan One";
-    font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
   }
 
   &__title-up {
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0.04em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    width: 232px;
+    font-size: 18px;
+    line-height: 21px;
     color: $rosedark;
-    margin: 0 0 16px;
   }
 
   &__title-down {
-    font-size: 58px;
-    line-height: 66px;
-    letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 200px;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.04em;
     color: $redfont;
-    margin: 0;
+  }
+
+  &__contact {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    font-weight: 700;
+    color: $black;
+    & h3 {
+      margin: 0;
+      font-size: 12px;        
+      
+    }
+  }
+
+  &__rights {
+    margin: auto;
+    margin-top: 16px;
+    width: 160px;
+    font-weight: 700;
+    color: $gray-pink;
+    text-align: center;
+    & h1 {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.52;
+      transition-duration: 250ms;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
   }
 }
 
 .social-network {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 40px;
-
-  &:hover {
-    cursor: pointer;
-  }
 
   &__box {
     width: 34px;
     height: 34px;
     background-color: #fea5bb;
-    border: 1px solid #fea5bb;
     border-radius: 50%;
     padding: 7px;
+    transition-duration: 250ms;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
   }
 
   &__box:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 29px;
   }
 
   &__icon {
@@ -80,15 +98,14 @@ footer {
 }
 
 .contact__tel {
+  margin-left: 5px;
   font-weight: 700;
-  font-size: 16px;
   color: $redfont;
-  text-decoration: none;
-  margin-left: 2px;
-}
-
-.contact__tel:hover {
-  transform: scale(1.05);
+  font-size: 12px;
+  transition-duration: 250ms;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .low-line {
@@ -96,39 +113,91 @@ footer {
   border-top: 1px solid #e1e1e1;
 }
 
-.footer-content--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 60px;
-}
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
+
   .footer-content {
+    padding: 0 20px;
+
     &--flex {
-      display: block;
-      padding: 0 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
+    &__title-up {
+      margin-bottom: 12px;
+      width: 340px;
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+    }
+  
+    &__title-down {
+      width: 340px;
+      font-size: 48px;
+      line-height: 55px;
+      letter-spacing: 0.06em;
+    }
+  
     &__contact {
-      text-align: right;
+      margin-bottom: 0;
+      & h3 {
+        font-size: 14px;
+      }
+    }
+  
+    &__rights {
+      margin: auto;
+      margin-top: 8px;
+      width: 700px;
+      & h1 {
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+      }
     }
   }
-
-  .social-network {
-    margin-top: 40px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container--responsive {
-    padding-top: 60px;
+  
+  .contact__tel {
+    margin-left: 7px;
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-content {
+    margin: auto;
     max-width: 1200px;
+    padding: 0 16px;
+
+    &--flex {
+      align-items: baseline;
+    }
+
+    &__title-up {
+      margin-bottom: 16px;
+      width: 472px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+  
+    &__title-down {
+      width: 480px;
+      font-size: 58px;
+      line-height: 66px;
+      margin-bottom: 60px;
+    }
+  
+    &__contact {
+      & h3 {
+        font-size: 16px;
+      }
+    }
   }
+
+  .contact__tel {
+    margin-left: 7px;
+    font-size: 16px;
+  }
+  
 }

@@ -1,10 +1,7 @@
 @use "../variables";
 
-
-
 .container {
-    height: 100vh;
-    width: 100%;
+    padding: 60px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +11,10 @@
     position: relative;
     max-width: 968px;
     width: 100%;
-    padding: 50px 0;
+    padding: 0;
     overflow: hidden;
 }
+
 
 .review .slide {
     display: flex;
@@ -27,16 +25,17 @@
 }
 
 .slide p {
-    width: 870px;
-    height: 178px;
+    margin-bottom: 16px;
+    width: 100%;
     background-color: $shade-ofgray;
     text-align: center;
     padding: 0 90px;
-    font-size: 16px;
+    padding-bottom: 26px;
+    padding-top: 16px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 186%;
     letter-spacing: 0.04em;
-    padding-top: 47px;
     text-decoration: underline 1px solid $light-silvercolor;
 }
 
@@ -45,6 +44,8 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 186%;
+    margin-bottom:20px;
+    margin-top: 8px;
 }
 
 /*swiper btn css*/
@@ -54,6 +55,12 @@ h3 {
     color: $swiper-color;
     transform: rotateY(380deg);
     transition: all 2s;
+    &:focus,
+    &:active {
+        outline: none;
+
+    }
+
 }
 
 .nav-btn::before,
@@ -76,6 +83,12 @@ h3 {
     animation: animate-comillas 3000ms infinite 1000ms;
 }
 
+.review-iconn {
+    margin: 0;
+    width: 54px;
+    height: 10px;
+}
+
 
 @keyframes animate-comillas {
     0% {
@@ -92,18 +105,43 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .slide p {
-        padding: 0;
-    }
-
     .nav-btn {
         display: none;
     }
 }
 
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 768px) {
+    .slide p {
+        font-size: 14px;
+    }
+
     .review {
+        padding: 0px 54px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 120px 20px;
         max-width: 1200px;
         margin: auto;
     }
+
+    .review {
+        padding: 0 96px;
+
+    }
+
+    .slide p {
+        font-size: 16px;
+    }
+
+    span,
+    h3 {
+        margin-bottom:30px;
+        margin-top: 12px;
+    }   
 }
