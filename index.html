@@ -30,13 +30,12 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- Swiper css-->
-   
   </head>
   
   <body>
     <header>
-      <section title="hero header">
-        <div class="header--background">
+      <section class="header--background" title="hero header">
+        <div class="header__container">
           <!-- Header top -->
           <div class="header-containertop">
             <div>
@@ -48,11 +47,11 @@
             <div class="navigation">
               <nav>
                 <ul class="navigation__list">
-                  <li class="navigation__item">Home</li>
-                  <li class="navigation__item">about us</li>
-                  <li class="navigation__item">How it´s made</li>
-                  <li class="navigation__item">Our Products</li>
-                  <li class="navigation__item">Contact</li>
+                  <li><a class="navigation__item navigation__item--select" href="./index.html">Home</a></li>
+                  <li><a class="navigation__item" href="#aboutus">about us</a></li>
+                  <li><a class="navigation__item" href="#aboutus">How it´s made</a></li>
+                  <li><a class="navigation__item" href="#products">Products</a></li>
+                  <li><a class="navigation__item" href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -78,52 +77,32 @@
 
           <div class="header-containerbottom">
             <div class="header-containerdown__left">
-    
-              <div class="header-containerdown__leftimage1">
-                <img src="images/passion.png" alt="Ice Cream Made With Passion" width="277" height="137"/>
-              </div>
-    
+              <img class="header-containerdown__leftimage1" src="images/passion.png" alt="Ice Cream Made With Passion"/>
               <div class="header-containerdown__leftbuttons">
                 <button class="button_prod" type="button">Products</button>
                 <button class="button_how" type="button">How it's made</button>
               </div>
-    
-              <div class="header-containerdown__leftimage2">
-              <img src="images/milk.png" alt="Milk" width="213" height="216">
-              </div>
-
+              <a href="#aboutus"><img class="header-containerdown__leftimage2" src="images/milk.png" alt="Milk"></a>
               <div class="header-containerdown__lefttext">
-                <p class="header-down__lefttext">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                <p class="header-down__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. ad
+                  distinctio ducimus dolorem possimus iure nisi.
                 </p>
-                <a><img src="images/arrow-right.png" width="26" height="26"/></a>
+                <a href="#aboutus"><img class="header-down__arrow" src="images/arrow-right.png" alt="arrow"></a>
               </div>
-              
-              
-            </div>
-            
-            <div class="header-containerdown__center">
-              
-            <div class="header-containerdown__centerbg">
-              <div class="header-containerdown__centerimage">
-                <img src="images/ice-cream.png" alt="Ice Cream" width="236" height="557"/>
-              </div>
-
-            </div>
-            </div>
-    
+            </div>   
             <div class="header-containerdown__right">
-              <div class="header-containerdown__right1">
-                <p class="header-down__number">16</p>
-                <p class="header-down__righttext">cafes</p>
+              <div>
+                <div class="header-containerdown__right1">
+                  <p class="header-down__cafenumber">16</p>
+                  <p class="header-down__text">cafes</p>
+                </div>
+                <div class="header-containerdown__right2">
+                  <p class="header-down__foodnumber">23</p>
+                  <p class="header-down__text">foodtrucks</p>
+                </div>
               </div>
-              <div class="header-containerdown__right2">
-                <p class="header-down__number">23</p>
-                <p class="header-down__righttext">food trucks</p>
-              </div>
-              <div class="header-containerdown__right3">
-                <img src="images/tasty.png" alt="Tasty" width="304" height="241"/>
-              </div>
+              <a href="https://www.youtube.com/watch?v=b7bdMH6hy5c"><img class="header-containerdown__right3" src="images/tasty.png" alt="Tasty"/></a>
             </div>
           </div>
         </div>
@@ -132,7 +111,7 @@
 
 
     <main>
-      <section title="products" class="products">
+      <section title="products" class="products" id="products">
         <div class="main-products-titles">
           <h2 class="main-products-titles title1">100% natural</h2>
           <h3 class="main-products-titles title2">PRODUCTS</h3>
@@ -142,7 +121,7 @@
             <!-- CARD ONE -->
             <div class="main-products__cardsrow card">
               <div class="main-products__cardsrow card top">
-                <img src="./images/products_icecream.png" alt="icecream" />
+                <img class="main-products__img" src="./images/products_icecream.png" alt="icecream" />
               </div>
               <div class="main-products__cardsrow card content content--color1">
                 <div>
@@ -158,14 +137,14 @@
                   </p>
                 </div>
                 <div>
-                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png" alt="rowright" />
+                <img  src="./images/products_arrowright.png" alt="rowright" />
                 </div>
               </div>
             </div>
             <!-- CARD TWO  -->
             <div class="main-products__cardsrow card">
               <div class="main-products__cardsrow card top">
-                <img src="./images/products_icecoffee.png" alt="icecoffee" />
+                <img class="main-products__img"src="./images/products_icecoffee.png" alt="icecoffee" />
               </div>
               <div class="main-products__cardsrow card content content--color2">
                 <div>
@@ -181,14 +160,14 @@
                   </p>
                 </div>
               <div>
-                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png" alt="rowright" />
+                <img src="./images/products_arrowright.png" alt="rowright" />
               </div>
               </div>
             </div>
             <!-- CARD THREE -->
             <div class="main-products__cardsrow card">
               <div class="main-products__cardsrow card top">
-                <img src="./images/products_milkshakes.png" alt="milk" />
+                <img class="main-products__img" src="./images/products_milkshakes.png" alt="milk" />
               </div>
               <div class="main-products__cardsrow card content content--color3">
                 <div>
@@ -204,7 +183,7 @@
                   </p>
                 </div>
               <div>
-                <img class=class="main-products__cardsrow card content icon" src="./images/products_arrowright.png" alt="rowright" />
+                <img src="./images/products_arrowright.png" alt="rowright" />
               </div>
               </div>
             </div>
@@ -212,7 +191,7 @@
         </div>
       </section>
 
-    <section class="about" title="about how is made">
+    <section class="about" title="about how is made" id="aboutus">
       <div class="about__container">
           <h2 class="about__h2">tradition and love</h2>
           <h1 class="about__h1">how it's made?</h1>
@@ -242,38 +221,38 @@
 
     <section class="advantages" title="advantages">
       <div class="advantages__container">
-      <h1 class="advantages__h1">advantages</h1>
-      <div class="advantages__item">
-        <img class="advantages__img" src="./images/4advantages1.png" alt="milk" >
-        <h3 class="advantages__h3">721</h3>
-        <p class="advantages__p">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </div>
-      <div class="advantages__item">
-        <img class="advantages__img" src="./images/4advantages2.png" alt="apples" >
-        <h3 class="advantages__h3">16kg</h3>
-        <p class="advantages__p">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </div>
-      <div class="advantages__item">
-        <img class="advantages__img" src="./images/4advantages3.png" alt="Ice-cream heart" >   
-        <h3 class="advantages__h3">84</h3>
-        <p class="advantages__p">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </div>
+        <h1 class="advantages__h1">advantages</h1>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages1.png" alt="milk" >
+          <h3 class="advantages__h3">721</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages2.png" alt="apples" >
+          <h3 class="advantages__h3">16kg</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <img class="advantages__img" src="./images/4advantages3.png" alt="Ice-cream heart" >   
+          <h3 class="advantages__h3">84</h3>
+          <p class="advantages__p">
+            Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+          </p>
+        </div>
       </div>
     </section>
 
- <section title="gallery">
+    <section class="gallery" title="gallery">
       <div class="main-gallery">
          <div class="main-gallery__item">
           <img src="./images/frame-pic1.png" alt="frame 1"/>
         </div>
         <div class="main-gallery__item">
-          <img " src="./images/frame-pic2.png" alt="frame 2"/>
+          <img src="./images/frame-pic2.png" alt="frame 2"/>
         </div>
         <div class="main-gallery__item">
           <img src="./images/frame-pic3.png" alt="frame 3"/>
@@ -315,6 +294,9 @@
               nulla quam nunc, accumsan
               congue. Lorem ipsum primis in nibh vel risus.
             </p>
+            <svg class="review-iconn">
+              <use href="./images/SVG/svgs.svg#reviews1"></use>
+            </svg>
             <span>
               <h3>Emily, Los Angeles</h3>
             </span>
@@ -328,6 +310,9 @@
               nulla quam nunc, accumsan
               congue. Lorem ipsum primis in nibh vel risus.
             </p>
+            <svg class="review-iconn">
+              <use href="./images/SVG/svgs.svg#reviews1"></use>
+            </svg>
             <span>
               <h3>Agata, California</h3>
             </span>
@@ -341,6 +326,9 @@
               nulla quam nunc, accumsan
               congue. Lorem ipsum primis in nibh vel risus.
             </p>
+            <svg class="review-iconn">
+              <use href="./images/SVG/svgs.svg#reviews1"></use>
+            </svg>
             <span>
               <h3>Mila, New York City</h3>
             </span>
@@ -351,7 +339,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section class="contact-container">
+  
+
+    <section class="contact-container" id="contact">
       <ul class="main-contacts">
         <li class="main-contacts__card">
           <div class="card">
@@ -395,6 +385,7 @@
           </div>
         </li>
         <li class="main-contacts__card">
+          <div class="card">
           <div class="main-contacts__info">
             <div class="card">
               <h3 class="card__title">CAFE</h3>
@@ -411,6 +402,7 @@
             </div>
             <a class="card__speakto" href="tel:+61(0)383 766 284"> +61(0) 383 766 284</a>
             <a class="card__speakto" href="mailto:noreply@envato.com"> noreply@envato.com</a>
+          </div>
           </div>
         </li>
       </ul>
@@ -512,9 +504,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-content__rights low-line">
-        <p>© 2022 - IceCream. All Rights Reserved.</p>
+    <div class="low-line">
+      <div class="footer-content__rights">
+        <h1>© 2022 - IceCream. All Rights Reserved.</h1>
       </div>
     </div>
   </footer>
@@ -535,12 +529,13 @@
             </svg>
           </button>
           <a class="mobile__link" href="./index.html">Home</a>
-          <a class="mobile__link" href="">About us</a>
-          <a class="mobile__link" href="">How it's made?</a>
-          <a class="mobile__link" href="">Our products</a>
-          <a class="mobile__link" href="">Contact</a>  
+          <a class="mobile__link" href="#aboutus">About us</a>
+          <a class="mobile__link" href="#aboutus">How it's made?</a>
+          <a class="mobile__link" href="#products">Our products</a>
+          <a class="mobile__link" href="#contact">Contact</a>
         </div>
       </div>
+    </section>
 
       <script
         defer
@@ -551,9 +546,7 @@
       <script defer src="./js/menu.js"></script>
       <script src="./js/modal.js"></script>
       <script src="./js/modalone.js"></script>
-    </section>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-
+      <script src="./js/swiper-bundle.min.js"></script>
+      <script src="./js/script.js"></script>
   </body>
 </html>

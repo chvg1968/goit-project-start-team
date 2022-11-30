@@ -1,19 +1,16 @@
 @use "../variables";
 
 .contact-container {
+    padding: 0 20px;
     background-image: linear-gradient(to top,
             $lavender-blush 90%,
             $white 10%);
+
 
 }
 
 .main-contacts {
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 32px;
-
 
     &__info {
         justify-content: center;
@@ -22,11 +19,11 @@
 
     &__card {
         background: $white;
-        width: 368px;
-        height: 538px;
+        width: 100%;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-left: 40px;
+        padding-bottom: 40px;
     }
 
     &__card:hover {
@@ -35,7 +32,10 @@
 
 }
 
+
 .card {
+    font-size: 12px;
+
     &__truck {
         width: 138px;
         height: 28px;
@@ -61,7 +61,6 @@
         border-bottom: 1px solid $light-silvercolor;
         width: 288px;
         line-height: 186%;
-        
         & :nth-child(even) {
             color: $rosedark;
             font-weight: 500;
@@ -69,16 +68,15 @@
     }
 
     &__info {
-        font-size: 16px;
+        padding-right: 69px;
         line-height: 183%;
         color: $gray-pink;
         padding-bottom: 22px;
         border-bottom: 1px solid $light-silvercolor;
-        width: 288px;
+      
     }
 
     &__speakto {
-        font-size: 16px;
         font-family: $font-general;
         line-height: 183%;
         text-decoration: none;
@@ -89,37 +87,42 @@
 
 /*botones de contacto*/
 .buttons {
-    height: 144px;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-right: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 32px;
     font-family: $font-general;
     background-color: $lavender-blush;
-    margin-bottom: -121px;
+    padding-bottom: 40px;
 
     &__location {
-        width: 198px;
+        margin-bottom: 10px;
+        width: 161px;
         height: 44px;
         border-radius: 22px;
-        margin-right: 12px;
         outline: none;
         border: none;
         background-color: $red-button;
         font-size: 16px;
         color: $white;
+        transition-duration: 250ms;
+        &:hover {
+            transform: translateY(-5px);
+          }
     }
 
     &__franchise {
-        width: 198px;
+        width: 161px;
         height: 44px;
         border-radius: 22px;
         outline: none;
-        border: 1px solid $redfont;
         background-color: $white;
         font-size: 16px;
         color: $redfont;
-        list-style: none;
+        margin-bottom: 0;
+        transition-duration: 250ms;
+        &:hover {
+            transform: translateY(-5px);
+          }
     }
 }
 
@@ -268,9 +271,57 @@ textarea {
     transition: opacity 0.6s;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+    .main-contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__card {
+            width: calc(33% - 16px);
+        }
+    }
+
+    .card {
+        font-size: 14px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    
+        &__location {
+            width: 192px;
+            margin-right: 15px;
+        }
+    
+        &__franchise {
+            width: 174px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
     .main-contacts {
         max-width: 1200px;
         margin: auto;
+    }
+    .card {
+        font-size: 16px;
+    }
+
+    .buttons {
+        padding-bottom: 121px;
+    
+        &__location {
+            width: 198px;
+            margin-right: 12px;
+        }
+    
+        &__franchise {
+            width: 168px;
+        }
     }
 }
