@@ -73,6 +73,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+  padding-left: 40%;
 
   &__box {
     width: 34px;
@@ -94,6 +95,10 @@ footer {
   &__icon {
     width: 20px;
     height: 20px;
+  }
+
+  &__box:hover {
+    transform: scale(1.1);
   }
 }
 
