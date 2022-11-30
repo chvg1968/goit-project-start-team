@@ -722,7 +722,7 @@ ul {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-products__cardsrow {
     display: flex;
     flex-direction: column;
