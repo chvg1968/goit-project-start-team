@@ -120,7 +120,7 @@ h3 {
     font-size: 16px;
   }
   span,
-h3 {
+  h3 {
     margin-bottom: 30px;
     margin-top: 12px;
   }
@@ -257,7 +257,6 @@ ul {
 .header--background {
   background-color: #FFB8CA;
 }
-
 .header__container {
   margin: auto;
   max-width: 1200px;
@@ -296,7 +295,6 @@ ul {
 .header__itemsright {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navigation__list {
@@ -308,7 +306,6 @@ ul {
   font-size: 16px;
   line-height: 21px;
 }
-
 .navigation__item {
   margin-right: 35px;
   color: white;
@@ -317,17 +314,9 @@ ul {
 .navigation__item--select {
   color: #D41443;
 }
-
-.header-containertop__button {
-  width: 159px;
-  height: 44px;
-  background-color: #ffffff;
-  border-radius: 22px;
+.navigation__item:hover {
+  cursor: pointer;
   color: #D41443;
-  border: 1px solid #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
 }
 
 .header-containerbottom {
@@ -554,16 +543,16 @@ ul {
     line-height: 1.4;
   }
   .header-containerdown__right1,
-.header-containerdown__right2 {
+  .header-containerdown__right2 {
     margin-right: 58px;
     margin-bottom: 18px;
   }
   .header-down__cafenumber,
-.header-down__foodnumber {
+  .header-down__foodnumber {
     font-size: 46px;
   }
   .header-down__cafenumber::after,
-.header-down__foodnumber::after {
+  .header-down__foodnumber::after {
     top: -4px;
     right: -18px;
     width: 30px;
@@ -1578,7 +1567,6 @@ footer {
   .footer-content__contact h3 {
     font-size: 14px;
   }
-
   .footer-content__rights {
     margin: auto;
     margin-top: 8px;
