@@ -58,8 +58,8 @@
     }
 
     &__shedule {
+        width: 270px;
         border-bottom: 1px solid $light-silvercolor;
-        width: 288px;
         line-height: 186%;
         & :nth-child(even) {
             color: $rosedark;
@@ -68,6 +68,7 @@
     }
 
     &__info {
+        width: 270px;
         padding-right: 69px;
         line-height: 183%;
         color: $gray-pink;
