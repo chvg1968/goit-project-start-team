@@ -193,10 +193,18 @@
     .main-products__cardsrow {
         display: flex;
         flex-direction: column;
+        .card{
+            pointer-events: none;
+            .content{
+               transform: translateY(0);
+               opacity: 1;
+            }
+        }
     }
 }
 
-@media screen and (min-width:768px){
+
+@media screen and (min-width:768px){    
     .main-products {
         margin:auto 15px auto; 
         margin-bottom: 60px;
