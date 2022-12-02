@@ -57,7 +57,7 @@ footer {
     font-weight: 700;
     color: $gray-pink;
     text-align: center;
-    & h1 {
+    & h2 {
       margin: 0;
       font-size: 14px;
       line-height: 1.52;
@@ -156,7 +156,7 @@ footer {
       margin: auto;
       margin-top: 8px;
       width: 700px;
-      & h1 {
+      & h2 {
         line-height: 1.86;
         letter-spacing: 0.02em;
       }

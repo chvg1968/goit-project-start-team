@@ -2,9 +2,8 @@
 
 .header {
 
-  &--background {
-    background-color: $rosebackground;
-  }
+  /*&--background {
+  }*/
 
   &__container {
     margin: auto;
@@ -61,6 +60,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    animation: navmov;
+    animation-duration: 250ms;
+    transform-origin: center right;
   }
 
   &__item {
@@ -196,6 +198,12 @@
 
 .header-containerdown__right3 {
   width: 190px;
+  height: 150px;
+  margin: 0;
+  padding:0;
+}
+
+.header__imga {
   height: 150px;
 }
 
@@ -357,6 +365,10 @@
     height: 241px;
   }
 
+  .header__imga {
+    height: 241px;
+  }
+
 
 }
 
@@ -364,4 +376,14 @@
   .navigation {
     display: none;
   }
+}
+
+@keyframes navmov {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+
 }
