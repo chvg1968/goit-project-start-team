@@ -22,8 +22,10 @@
         width: 100%;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        padding-left: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
         padding-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     &__card:hover {
@@ -60,6 +62,7 @@
     &__shedule {
         width: 270px;
         border-bottom: 1px solid $light-silvercolor;
+        width: 100%;
         line-height: 186%;
         & :nth-child(even) {
             color: $rosedark;
@@ -68,13 +71,12 @@
     }
 
     &__info {
-        width: 270px;
+        width: 100%;
         padding-right: 69px;
         line-height: 183%;
         color: $gray-pink;
         padding-bottom: 22px;
         border-bottom: 1px solid $light-silvercolor;
-      
     }
 
     &__speakto {
@@ -283,6 +285,7 @@ textarea {
 
         &__card {
             width: calc(33% - 16px);
+            margin-bottom: 0px;
         }
     }
 
@@ -311,6 +314,13 @@ textarea {
     .main-contacts {
         max-width: 1200px;
         margin: auto;
+
+        &__card {
+            &__card {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
     }
     .card {
         font-size: 16px;
