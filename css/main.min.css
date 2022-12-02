@@ -120,7 +120,7 @@ h3 {
     font-size: 16px;
   }
   span,
-h3 {
+  h3 {
     margin-bottom: 30px;
     margin-top: 12px;
   }
@@ -556,16 +556,16 @@ ul {
     line-height: 1.4;
   }
   .header-containerdown__right1,
-.header-containerdown__right2 {
+  .header-containerdown__right2 {
     margin-right: 58px;
     margin-bottom: 18px;
   }
   .header-down__cafenumber,
-.header-down__foodnumber {
+  .header-down__foodnumber {
     font-size: 46px;
   }
   .header-down__cafenumber::after,
-.header-down__foodnumber::after {
+  .header-down__foodnumber::after {
     top: -4px;
     right: -18px;
     width: 30px;
@@ -1222,6 +1222,7 @@ ul {
   padding-left: 12px;
 }
 .card__shedule {
+  width: 270px;
   border-bottom: 1px solid #E1E1E1;
   width: 100%;
   line-height: 186%;
@@ -1653,7 +1654,6 @@ footer {
     font-size: 16px;
   }
 }
-
 .canvas {
   height: 505px;
   width: 100%;
