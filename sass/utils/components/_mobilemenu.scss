@@ -74,6 +74,7 @@
         color: $redfont;
         background-color: $white;
         border-radius: 22px;
+        transition-duration: 250ms;
         &:hover {
             background-color: $rosebackground;
             color: white;
@@ -90,8 +91,8 @@
         margin-left: 15px;
         width: 8px;
         height: 11px;
-        stroke: $redfont
-
+        stroke: $redfont;
+        transition-duration: 250ms;
     }
 
     &__link {
@@ -101,6 +102,7 @@
         margin-bottom: 23px;
         font-size: 14px;
         color: white;
+        transition-duration: 250ms;
         &:hover {
             color: $rosebackground;
         }
