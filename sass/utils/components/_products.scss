@@ -134,9 +134,8 @@
             }
 
             .content {
-                transform: translateY(-20%);
-                opacity: 0;
-                overflow: hidden;
+
+                transform: translateY(0);
                 @include content-profile;
 
                 &--color1 {
@@ -179,29 +178,27 @@
     }
 }
 
-.main-products__cardsrow .card:hover {
-        cursor: pointer;
-        .content{
-        transform:translateY(0);
-        transition: $transition1;
-        opacity: 1;
-}
-}
 
 
 @media screen and (max-width:767px) {
     .main-products__cardsrow {
         display: flex;
-        flex-direction: column;
-        .card{
-            pointer-events: none;
-            .content{
-               transform: translateY(0);
-               opacity: 1;
-            }
-        }
-    }
+        flex-direction: column;        
 }
+}
+
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+  
+.show {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
 
 
 @media screen and (min-width:768px){    
